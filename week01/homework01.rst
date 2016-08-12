@@ -2,6 +2,13 @@
 Домшанее задание 01
 ===================
 
+Материалы занятия: https://github.com/maxchv/LearnPython/tree/master/week01
+
+Домашнее задание: https://github.com/maxchv/LearnPython/blob/master/week01/homework01.rst
+
+Видео: https://youtu.be/QgEzKiVkSG0
+
+
 Задание 0
 ---------
 
