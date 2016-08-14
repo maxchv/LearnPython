@@ -4,9 +4,12 @@
 
 Материалы занятия: https://github.com/maxchv/LearnPython/tree/master/week01
 
+Примеры:	https://github.com/maxchv/LearnPython/tree/master/week01/examples/conditions.script.py
+			https://github.com/maxchv/LearnPython/tree/master/week01/examples/conditions.shell.py
+
 Домашнее задание: https://github.com/maxchv/LearnPython/blob/master/week01/homework02.rst
 
-Видео: 
+Видео: https://youtu.be/zwPG1F_hZ44, https://youtu.be/PJjjIRUvTMI
 
 
 Задание 1
