@@ -1,4 +1,4 @@
-﻿===================
+===================
 Домшанее задание 04
 ===================
 
@@ -67,6 +67,11 @@ When the program completes, sort and print the resulting words in alphabetical o
 'is', 'kill', 'light', 'moon', 'pale', 'sick', 'soft',
 'sun', 'the', 'through', 'what', 'window',
 'with', 'yonder']
+
+Задание 4
+---------
+
+https://ru.wikipedia.org/wiki/Палиндром
 
 Задание X
 ---------
