@@ -1,25 +1,25 @@
+ï»¿===================
+Ð”Ð¾Ð¼ÑˆÐ°Ð½ÐµÐµ Ð·Ð°Ð´Ð°Ð½Ð¸Ðµ 04
 ===================
-Äîìøàíåå çàäàíèå 04
-===================
 
-Ìàòåðèàëû çàíÿòèÿ: https://github.com/maxchv/LearnPython/tree/master/week02
+ÐœÐ°Ñ‚ÐµÑ€Ð¸Ð°Ð»Ñ‹ Ð·Ð°Ð½ÑÑ‚Ð¸Ñ: https://github.com/maxchv/LearnPython/tree/master/week02
 
-Äîìàøíåå çàäàíèå: https://github.com/maxchv/LearnPython/blob/master/week02/homework04.rst
+Ð”Ð¾Ð¼Ð°ÑˆÐ½ÐµÐµ Ð·Ð°Ð´Ð°Ð½Ð¸Ðµ: https://github.com/maxchv/LearnPython/blob/master/week02/homework04.rst
 
-Âèäåî: 
+Ð’Ð¸Ð´ÐµÐ¾: 
 
-Çàäàíèå 1
+Ð—Ð°Ð´Ð°Ð½Ð¸Ðµ 1
 ---------
 
-Íàïèøèòå ïðîãðàììó, êîòîðàÿ ñ÷èòûâàåò ñïèñîê ÷èñåë lst èç ïåðâîé ñòðîêè è ÷èñëî x èç âòîðîé ñòðîêè, 
-êîòîðàÿ âûâîäèò âñå ïîçèöèè, íà êîòîðûõ âñòðå÷àåòñÿ ÷èñëî x â ïåðåäàííîì ñïèñêå lst.
+ÐÐ°Ð¿Ð¸ÑˆÐ¸Ñ‚Ðµ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ñƒ, ÐºÐ¾Ñ‚Ð¾Ñ€Ð°Ñ ÑÑ‡Ð¸Ñ‚Ñ‹Ð²Ð°ÐµÑ‚ ÑÐ¿Ð¸ÑÐ¾Ðº Ñ‡Ð¸ÑÐµÐ» lst Ð¸Ð· Ð¿ÐµÑ€Ð²Ð¾Ð¹ ÑÑ‚Ñ€Ð¾ÐºÐ¸ Ð¸ Ñ‡Ð¸ÑÐ»Ð¾ x Ð¸Ð· Ð²Ñ‚Ð¾Ñ€Ð¾Ð¹ ÑÑ‚Ñ€Ð¾ÐºÐ¸, 
+ÐºÐ¾Ñ‚Ð¾Ñ€Ð°Ñ Ð²Ñ‹Ð²Ð¾Ð´Ð¸Ñ‚ Ð²ÑÐµ Ð¿Ð¾Ð·Ð¸Ñ†Ð¸Ð¸, Ð½Ð° ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ñ… Ð²ÑÑ‚Ñ€ÐµÑ‡Ð°ÐµÑ‚ÑÑ Ñ‡Ð¸ÑÐ»Ð¾ x Ð² Ð¿ÐµÑ€ÐµÐ´Ð°Ð½Ð½Ð¾Ð¼ ÑÐ¿Ð¸ÑÐºÐµ lst.
 
-Ïîçèöèè íóìåðóþòñÿ ñ íóëÿ, åñëè ÷èñëî x íå âñòðå÷àåòñÿ â ñïèñêå, âûâåñòè ñòðîêó "Îòñóòñòâóåò" 
-(áåç êàâû÷åê, ñ áîëüøîé áóêâû).
+ÐŸÐ¾Ð·Ð¸Ñ†Ð¸Ð¸ Ð½ÑƒÐ¼ÐµÑ€ÑƒÑŽÑ‚ÑÑ Ñ Ð½ÑƒÐ»Ñ, ÐµÑÐ»Ð¸ Ñ‡Ð¸ÑÐ»Ð¾ x Ð½Ðµ Ð²ÑÑ‚Ñ€ÐµÑ‡Ð°ÐµÑ‚ÑÑ Ð² ÑÐ¿Ð¸ÑÐºÐµ, Ð²Ñ‹Ð²ÐµÑÑ‚Ð¸ ÑÑ‚Ñ€Ð¾ÐºÑƒ "ÐžÑ‚ÑÑƒÑ‚ÑÑ‚Ð²ÑƒÐµÑ‚" 
+(Ð±ÐµÐ· ÐºÐ°Ð²Ñ‹Ñ‡ÐµÐº, Ñ Ð±Ð¾Ð»ÑŒÑˆÐ¾Ð¹ Ð±ÑƒÐºÐ²Ñ‹).
 
-Ïîçèöèè äîëæíû áûòü âûâåäåíû â îäíó ñòðîêó, ïî âîçðàñòàíèþ àáñîëþòíîãî çíà÷åíèÿ.
+ÐŸÐ¾Ð·Ð¸Ñ†Ð¸Ð¸ Ð´Ð¾Ð»Ð¶Ð½Ñ‹ Ð±Ñ‹Ñ‚ÑŒ Ð²Ñ‹Ð²ÐµÐ´ÐµÐ½Ñ‹ Ð² Ð¾Ð´Ð½Ñƒ ÑÑ‚Ñ€Ð¾ÐºÑƒ, Ð¿Ð¾ Ð²Ð¾Ð·Ñ€Ð°ÑÑ‚Ð°Ð½Ð¸ÑŽ Ð°Ð±ÑÐ¾Ð»ÑŽÑ‚Ð½Ð¾Ð³Ð¾ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ.
 
-Ïðèìåð ýêðàíà âûâîäà:
+ÐŸÑ€Ð¸Ð¼ÐµÑ€ ÑÐºÑ€Ð°Ð½Ð° Ð²Ñ‹Ð²Ð¾Ð´Ð°:
 
 >>> 5 8 2 7 8 8 2 4
 >>> 8
@@ -27,16 +27,55 @@
 
 >>> 5 8 2 7 8 8 2 4
 >>> 10
-Îòñóòñòâóåò
+ÐžÑ‚ÑÑƒÑ‚ÑÑ‚Ð²ÑƒÐµÑ‚
 
-Çàäàíèå 2
+
+Ð—Ð°Ð´Ð°Ð½Ð¸Ðµ 2
 ---------
 
-Âûâåäèòå òàáëèöó ðàçìåðîì n?n, çàïîëíåííóþ ÷èñëàìè îò 1 äî n2 ïî ñïèðàëè, 
-âûõîäÿùåé èç ëåâîãî âåðõíåãî óãëà è çàêðó÷åííîé ïî ÷àñîâîé ñòðåëêå, 
-êàê ïîêàçàíî â ïðèìåðå (çäåñü n=5):
+write the program that prompts the user for a list of numbers and prints out the maximum and minimum 
+of the numbers at the end when the user enters "done". 
 
-Ïðèìåð ýêðàíà âûâîäà:
+Write the program to store the numbers the user enters in a list and use the max() and min() 
+functions to compute the maximum and minimum numbers after the loop completes.
+
+>>> Enter a number: 6
+>>> Enter a number: 2
+>>> Enter a number: 9
+>>> Enter a number: 3
+>>> Enter a number: 5
+>>> Enter a number: done
+>>> Maximum: 9.0
+>>> Minimum: 2.0
+
+Ð—Ð°Ð´Ð°Ð½Ð¸Ðµ 3
+---------
+
+"""But soft what light through yonder window breaks
+It is the east and Juliet is the sun
+Arise fair sun and kill the envious moon
+Who is already sick and pale with grief"""
+
+For each line, split the line into a list of words using the split function.
+
+For each word, check to see if the word is already in a list. If the word is not in the list, add it to the list.
+
+When the program completes, sort and print the resulting words in alphabetical order.
+
+['Arise', 'But', 'It', 'Juliet', 'Who', 'already',
+'and', 'breaks', 'east', 'envious', 'fair', 'grief',
+'is', 'kill', 'light', 'moon', 'pale', 'sick', 'soft',
+'sun', 'the', 'through', 'what', 'window',
+'with', 'yonder']
+
+Ð—Ð°Ð´Ð°Ð½Ð¸Ðµ X
+---------
+
+Ð’Ñ‹Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‚Ð°Ð±Ð»Ð¸Ñ†Ñƒ Ñ€Ð°Ð·Ð¼ÐµÑ€Ð¾Ð¼ N x N, Ð·Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½Ð½ÑƒÑŽ Ñ‡Ð¸ÑÐ»Ð°Ð¼Ð¸ Ð¾Ñ‚ 1 Ð´Ð¾ N**2 Ð¿Ð¾ ÑÐ¿Ð¸Ñ€Ð°Ð»Ð¸, 
+Ð²Ñ‹Ñ…Ð¾Ð´ÑÑ‰ÐµÐ¹ Ð¸Ð· Ð»ÐµÐ²Ð¾Ð³Ð¾ Ð²ÐµÑ€Ñ…Ð½ÐµÐ³Ð¾ ÑƒÐ³Ð»Ð° Ð¸ Ð·Ð°ÐºÑ€ÑƒÑ‡ÐµÐ½Ð½Ð¾Ð¹ Ð¿Ð¾ Ñ‡Ð°ÑÐ¾Ð²Ð¾Ð¹ ÑÑ‚Ñ€ÐµÐ»ÐºÐµ, 
+ÐºÐ°Ðº Ð¿Ð¾ÐºÐ°Ð·Ð°Ð½Ð¾ Ð² Ð¿Ñ€Ð¸Ð¼ÐµÑ€Ðµ (Ð·Ð´ÐµÑÑŒ n=5):
+
+ÐŸÑ€Ð¸Ð¼ÐµÑ€ ÑÐºÑ€Ð°Ð½Ð° Ð²Ñ‹Ð²Ð¾Ð´Ð°:
 
 >>> 5
 1 2 3 4 5
