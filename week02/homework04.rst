@@ -33,34 +33,37 @@
 Задание 2
 ---------
 
-write the program that prompts the user for a list of numbers and prints out the maximum and minimum 
-of the numbers at the end when the user enters "done". 
+Напишите программу в которой у пользователя запрашивается чисела и выводится
+максимальное и минимальное число в конце, когда пользователь ввел слово "done". 
 
-Write the program to store the numbers the user enters in a list and use the max() and min() 
-functions to compute the maximum and minimum numbers after the loop completes.
+Пример экрана вывода:
 
->>> Enter a number: 6
->>> Enter a number: 2
->>> Enter a number: 9
->>> Enter a number: 3
->>> Enter a number: 5
->>> Enter a number: done
->>> Maximum: 9.0
->>> Minimum: 2.0
+>>> Введите число: 6
+>>> Введите число: 2
+>>> Введите число: 9
+>>> Введите число: 3
+>>> Введите число: 5
+>>> Введите число: done
+>>> Максимальное число: 9.0
+>>> Минимальное число: 2.0
 
 Задание 3
 ---------
+
+Дан текст:
 
 """But soft what light through yonder window breaks
 It is the east and Juliet is the sun
 Arise fair sun and kill the envious moon
 Who is already sick and pale with grief"""
 
-For each line, split the line into a list of words using the split function.
+Получите список слов приведенного выше текста.
 
-For each word, check to see if the word is already in a list. If the word is not in the list, add it to the list.
+Для каждого слова проверть присутствует ли оно уже в списке слов.
+Если слово не найдено, то добавляется в список слов
 
-When the program completes, sort and print the resulting words in alphabetical order.
+В конце программы вывидите отсортированный список по алфавиту на экран. 
+Список должен иметь вид:
 
 ['Arise', 'But', 'It', 'Juliet', 'Who', 'already',
 'and', 'breaks', 'east', 'envious', 'fair', 'grief',
@@ -71,7 +74,23 @@ When the program completes, sort and print the resulting words in alphabetical o
 Задание 4
 ---------
 
+Напишите программу в которой у пользователя запрашивается слово и 
+проверяется является ли оно палиндромом.
+
 https://ru.wikipedia.org/wiki/Палиндром
+
+Программа завершает свою работу при вводе слова "Конец"
+
+Учесть, что слово может сожержать как прописные (большие), так и 
+строчные (маленькие) символы
+
+Пример экрана вывода:
+
+>>> Введите слово: дата
+Это не палиндром
+>>> Введите слово: Мадам
+Это палиндром
+>>> Введите слово: Конец
 
 Задание X
 ---------
