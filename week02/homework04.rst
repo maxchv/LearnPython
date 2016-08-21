@@ -6,7 +6,7 @@
 
 Домашнее задание: https://github.com/maxchv/LearnPython/blob/master/week02/homework04.rst
 
-Видео: 
+Видео: https://youtu.be/RQ0OyTMqjq4
 
 Задание 1
 ---------
