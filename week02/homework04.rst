@@ -4,9 +4,16 @@
 
 Материалы занятия: https://github.com/maxchv/LearnPython/tree/master/week02
 
+Слайды:	          https://github.com/maxchv/LearnPython/tree/master/week02/05.Lists.pptx
+
 Домашнее задание: https://github.com/maxchv/LearnPython/blob/master/week02/homework04.rst
 
+Листинг:	  https://github.com/maxchv/LearnPython/tree/master/week02/listing26.08.2016.txt
+
+Примеры на занятии: https://github.com/maxchv/LearnPython/tree/master/week02/list.py
+
 Видео: https://youtu.be/RQ0OyTMqjq4
+       https://youtu.be/AIvcv2WFh6s
 
 Задание 1
 ---------
@@ -106,7 +113,7 @@ https://ru.wikipedia.org/wiki/Палиндром
 Пример экрана вывода:
 
 >>> 5
-1 2 3 4 5
+ 1  2  3  4 5
 16 17 18 19 6
 15 24 25 20 7
 14 23 22 21 8

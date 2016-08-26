@@ -1,0 +1,447 @@
+Python 3.5.2 (v3.5.2:4def2a2901a5, Jun 25 2016, 22:01:18) [MSC v.1900 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> x = list(range(10))
+>>> x[1:n+1]
+Traceback (most recent call last):
+  File "<pyshell#1>", line 1, in <module>
+    x[1:n+1]
+NameError: name 'n' is not defined
+>>> x[1:10+1]
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> True + 1
+2
+>>> type(True)
+<class 'bool'>
+>>> 
+====== RESTART: D:/shaptala/python/LearnPython/week03/examples/list.py ======
+Oбщий доход предпринимателя з год 302634
+Cредний доход в месяц 25219.5
+>>> 
+====== RESTART: D:/shaptala/python/LearnPython/week03/examples/list.py ======
+Oбщий доход предпринимателя з год 326089
+Cредний доход в месяц 25083.76923076923
+>>> 
+====== RESTART: D:/shaptala/python/LearnPython/week03/examples/list.py ======
+Oбщий доход предпринимателя з год 326089
+Месяцов 13
+Cредний доход в месяц 25083.76923076923
+>>> 
+====== RESTART: D:/shaptala/python/LearnPython/week03/examples/list.py ======
+Oбщий доход предпринимателя з год 302634
+Месяцов 12
+Cредний доход в месяц 25219.5
+>>> 
+====== RESTART: D:/shaptala/python/LearnPython/week03/examples/list.py ======
+Max idx: 6
+Min idx: 0
+Oбщий доход предпринимателя з год 302634
+Месяцов 12
+Cредний доход в месяц 25219.5
+>>> # Running SubCode [list.py:35-41] '## [subcode]'
+Oбщий доход предпринимателя з год 302634
+Cредний доход в месяц 25219.5
+>>> # Running SubCode [list.py:35-41] '## [subcode]'
+Oбщий доход предпринимателя з год 302634
+Cредний доход в месяц 25219.5
+>>> # Running All SubCodes [list.py:1-41]
+Max idx: 6
+Min idx: 0
+Oбщий доход предпринимателя з год 302634
+Месяцов 12
+Cредний доход в месяц 25219.5
+Oбщий доход предпринимателя з год 302634
+Cредний доход в месяц 25219.5
+>>> # Running SubCode [list.py:35-41] '## [subcode]'
+Oбщий доход предпринимателя з год 302634
+Cредний доход в месяц 25219.5
+>>> # Running SubCode [list.py:1-34] 'beginning of file'
+Max idx: 6
+Min idx: 0
+Oбщий доход предпринимателя з год 302634
+Месяцов 12
+Cредний доход в месяц 25219.5
+>>> # Running SubCode [list.py:35-41] '## [subcode]'
+Oбщий доход предпринимателя з год 302634
+Cредний доход в месяц 25219.5
+>>> # Running SubCode [list.py:35-44] '## [subcode]'
+Oбщий доход предпринимателя з год 302634
+Cредний доход в месяц 25219.5
+Максимальный номер месяца: 1
+Минимальный месяц: 7
+>>> # Running SubCode [list.py:46-51] '## [input to list]'
+[]
+>>> 
+    There is an error (invalid syntax) at line 50, column 11.
+>>> # Running SubCode [list.py:46-55] '## [input to list]'
+[]
+Введите доход для 1 месяца: 124423
+money [124423.0]
+Введите доход для 2 месяца: -293
+money [124423.0, -293.0]
+Введите доход для 3 месяца: 9289082
+money [124423.0, -293.0, 9289082.0]
+Введите доход для 4 месяца: -089237897
+money [124423.0, -293.0, 9289082.0, -89237897.0]
+Введите доход для 5 месяца: 94908
+money [124423.0, -293.0, 9289082.0, -89237897.0, 94908.0]
+Введите доход для 6 месяца: 90902
+money [124423.0, -293.0, 9289082.0, -89237897.0, 94908.0, 90902.0]
+Введите доход для 7 месяца: 82882
+money [124423.0, -293.0, 9289082.0, -89237897.0, 94908.0, 90902.0, 82882.0]
+Введите доход для 8 месяца: 82828
+money [124423.0, -293.0, 9289082.0, -89237897.0, 94908.0, 90902.0, 82882.0, 82828.0]
+Введите доход для 9 месяца: 9292
+money [124423.0, -293.0, 9289082.0, -89237897.0, 94908.0, 90902.0, 82882.0, 82828.0, 9292.0]
+Введите доход для 10 месяца: 99202
+money [124423.0, -293.0, 9289082.0, -89237897.0, 94908.0, 90902.0, 82882.0, 82828.0, 9292.0, 99202.0]
+Введите доход для 11 месяца: 8992
+money [124423.0, -293.0, 9289082.0, -89237897.0, 94908.0, 90902.0, 82882.0, 82828.0, 9292.0, 99202.0, 8992.0]
+Введите доход для 12 месяца: 929003
+money [124423.0, -293.0, 9289082.0, -89237897.0, 94908.0, 90902.0, 82882.0, 82828.0, 9292.0, 99202.0, 8992.0, 929003.0]
+>>> 1
+1
+>>> 1.0
+1.0
+>>> a = 1.0
+>>> print(a)
+1.0
+>>> 1./1
+1.0
+>>> 0.99999999999999999999
+1.0
+>>> 0.9999999999999+0.9999
+1.9998999999998999
+>>> 0.000000000000000001
+1e-18
+>>> 0.000000000000000000000000001
+1e-27
+>>> print(0.000000000000000000000000001)
+1e-27
+>>> 0.0  == 0.0
+True
+>>> 0.0  == 0.000000000000000000000000000000000001
+False
+>>> len(range(5, 11))
+6
+>>> list(range(5, 11))
+[5, 6, 7, 8, 9, 10]
+>>> list(range(5, 11, 2))
+[5, 7, 9]
+>>> a = [1,2,3]
+>>> b = [4,5,6]
+>>> b + a
+[4, 5, 6, 1, 2, 3]
+>>> a + b
+[1, 2, 3, 4, 5, 6]
+>>> a = "abc"
+>>> b = "def"
+>>> a + b
+'abcdef'
+>>> b + a
+'defabc'
+>>> a * 10
+'abcabcabcabcabcabcabcabcabcabc'
+>>> "*"*10
+'**********'
+>>> "-"*10
+'----------'
+>>> [1,2,3]*8
+[1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3]
+>>> [1,2,3]*[1,2,3]
+Traceback (most recent call last):
+  File "<pyshell#32>", line 1, in <module>
+    [1,2,3]*[1,2,3]
+TypeError: can't multiply sequence by non-int of type 'list'
+>>> "abc"*"def"
+Traceback (most recent call last):
+  File "<pyshell#33>", line 1, in <module>
+    "abc"*"def"
+TypeError: can't multiply sequence by non-int of type 'str'
+>>> "abc"*4.0
+Traceback (most recent call last):
+  File "<pyshell#34>", line 1, in <module>
+    "abc"*4.0
+TypeError: can't multiply sequence by non-int of type 'float'
+>>> "abc" + "def"
+'abcdef'
+>>> "abc" "def"
+'abcdef'
+>>> a
+'abc'
+>>> b
+'def'
+>>> a b
+SyntaxError: invalid syntax
+>>> a + b
+'abcdef'
+>>> t = [9, 41, 12, 3, 74, 15]
+>>> l = [t[1], t[2]]
+>>> ls
+Traceback (most recent call last):
+  File "<pyshell#43>", line 1, in <module>
+    ls
+NameError: name 'ls' is not defined
+>>> l
+[41, 12]
+>>> t[1]
+41
+>>> t
+[9, 41, 12, 3, 74, 15]
+>>> t[6:0]
+[]
+>>> t[1:0]
+[]
+>>> t[0:0]
+[]
+>>> t[0:1]
+[9]
+>>> t[:1]
+[9]
+>>> t[:1]
+[9]
+>>> [range(10)]
+[range(0, 10)]
+>>> list(range(10))
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> list(range(0, 10))
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> list(range(5, 10))
+[5, 6, 7, 8, 9]
+>>> list(range(1, 3))
+[1, 2]
+>>> # Running SubCode [list.py:56-67] '## [sublists]'
+result [41, 12]
+>>> list(range(-5, -3))
+[-5, -4]
+>>> t[-5:-3]
+[41, 12]
+>>> t[-5:3]
+[41, 12]
+>>> t[-5:-3:1]
+[41, 12]
+>>> t[-5:-3:-1]
+[]
+>>> t[:-1]
+[9, 41, 12, 3, 74]
+>>> t[-3:-5:-1]
+[3, 12]
+>>> t
+[9, 41, 12, 3, 74, 15]
+>>> s = "abcdef"
+>>> s
+'abcdef'
+>>> s[0]
+'a'
+>>> s[:3]
+'abc'
+>>> s = "1 2 3 4 5"
+>>> int(s)
+Traceback (most recent call last):
+  File "<pyshell#71>", line 1, in <module>
+    int(s)
+ValueError: invalid literal for int() with base 10: '1 2 3 4 5'
+>>> list(s)
+['1', ' ', '2', ' ', '3', ' ', '4', ' ', '5']
+>>> s = "10 102 3 4 5"
+>>> list(s)
+['1', '0', ' ', '1', '0', '2', ' ', '3', ' ', '4', ' ', '5']
+>>> s.split()
+['10', '102', '3', '4', '5']
+>>> s = "10   102   3 4 5"
+>>> s.split()
+['10', '102', '3', '4', '5']
+>>> s = "10;102;3;4;5"
+>>> s.split()
+['10;102;3;4;5']
+>>> s.split(';')
+['10', '102', '3', '4', '5']
+>>> dir(list)
+['__add__', '__class__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', '__iadd__', '__imul__', '__init__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__rmul__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
+>>> dir(int)
+['__abs__', '__add__', '__and__', '__bool__', '__ceil__', '__class__', '__delattr__', '__dir__', '__divmod__', '__doc__', '__eq__', '__float__', '__floor__', '__floordiv__', '__format__', '__ge__', '__getattribute__', '__getnewargs__', '__gt__', '__hash__', '__index__', '__init__', '__int__', '__invert__', '__le__', '__lshift__', '__lt__', '__mod__', '__mul__', '__ne__', '__neg__', '__new__', '__or__', '__pos__', '__pow__', '__radd__', '__rand__', '__rdivmod__', '__reduce__', '__reduce_ex__', '__repr__', '__rfloordiv__', '__rlshift__', '__rmod__', '__rmul__', '__ror__', '__round__', '__rpow__', '__rrshift__', '__rshift__', '__rsub__', '__rtruediv__', '__rxor__', '__setattr__', '__sizeof__', '__str__', '__sub__', '__subclasshook__', '__truediv__', '__trunc__', '__xor__', 'bit_length', 'conjugate', 'denominator', 'from_bytes', 'imag', 'numerator', 'real', 'to_bytes']
+>>> dir(tuple)
+['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'count', 'index']
+>>> t
+[9, 41, 12, 3, 74, 15]
+>>> t.insert(0, -100)
+>>> t
+[-100, 9, 41, 12, 3, 74, 15]
+>>> t[0]
+-100
+>>> t = [1, 2, 3, 4]
+>>> t.remove(2)
+>>> t
+[1, 3, 4]
+>>> t.append(2)
+>>> t.append(5)
+>>> t.append(2)
+>>> t
+[1, 3, 4, 2, 5, 2]
+>>> t.remove(2)
+>>> t
+[1, 3, 4, 5, 2]
+>>> del t[1]
+>>> t
+[1, 4, 5, 2]
+>>> del t[:2]
+>>> t
+[5, 2]
+>>> t = range(1, 11)
+>>> t = list(range(1, 11))
+>>> t
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+>>> t[3:6]
+[4, 5, 6]
+>>> t
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+>>> del t[3:6]
+>>> t
+[1, 2, 3, 7, 8, 9, 10]
+>>> t
+[1, 2, 3, 7, 8, 9, 10]
+>>> last = t.pop()
+>>> t
+[1, 2, 3, 7, 8, 9]
+>>> last
+10
+>>> t
+[1, 2, 3, 7, 8, 9]
+>>> a = t.pop(1)
+>>> a
+2
+>>> t
+[1, 3, 7, 8, 9]
+>>> n = [1,2,t]
+>>> n
+[1, 2, [1, 3, 7, 8, 9]]
+>>> n[0]
+1
+>>> n[1]
+2
+>>> n[2]
+[1, 3, 7, 8, 9]
+>>> n[2][2:]
+[7, 8, 9]
+>>> del n[2][2:]
+>>> n
+[1, 2, [1, 3]]
+>>> del n[:]
+>>> n
+[]
+>>> t
+[1, 3]
+>>> if t.count(3) != 0:
+	print("В списке есть цифра 3")
+
+	
+В списке есть цифра 3
+>>> 3 in t
+True
+>>> if 3 in t:
+	print("В списке есть цифра 3")
+
+	
+В списке есть цифра 3
+>>> "a" in "abcde"
+True
+>>> "f" in "abcde"
+False
+>>> "ab" in "abcde"
+True
+>>> t = ["ab", "cd", "de"]
+>>> include = True
+>>> s = "abcde"
+>>> for w in t:
+	if w not in s:
+		include = False
+		break
+
+	
+>>> include
+True
+>>> for w in t:
+	if w not in s:
+		include = False
+		break
+
+	
+>>> t = ["ab", "cd", "dea"]
+>>> for w in t:
+	if w not in s:
+		include = False
+		break
+
+	
+>>> include
+False
+>>> t
+['ab', 'cd', 'dea']
+>>> t.sort()
+>>> t
+['ab', 'cd', 'dea']
+>>> t = ['Я', 'А', 'Д', 'a', 'ad', 'ac']
+>>> t
+['Я', 'А', 'Д', 'a', 'ad', 'ac']
+>>> t.sort()
+>>> t
+['a', 'ac', 'ad', 'А', 'Д', 'Я']
+>>> 'madam'
+'madam'
+>>> m = list('madam')
+>>> m
+['m', 'a', 'd', 'a', 'm']
+>>> m.reverse()
+>>> m
+['m', 'a', 'd', 'a', 'm']
+>>> s = 'madam'
+>>> m = list(s)
+>>> m
+['m', 'a', 'd', 'a', 'm']
+>>> m.reverse()
+>>> list(s) == m
+True
+>>> m
+['m', 'a', 'd', 'a', 'm']
+>>> m[0] = 'a'
+>>> m
+['a', 'a', 'd', 'a', 'm']
+>>> list(s) == m
+False
+>>> l1 = [1,2,3]
+>>> l2 = l1
+>>> l1
+[1, 2, 3]
+>>> l2
+[1, 2, 3]
+>>> l1[0] = -100
+>>> l1
+[-100, 2, 3]
+>>> l2
+[-100, 2, 3]
+>>> # Running SubCode [list.py:65-75] '## [subcode]'
+['But', 'soft', 'what', 'light', 'through', 'yonder', 'window', 'breaks', 'It', 'is', 'the', 'east', 'and', 'Juliet', 'is', 'the', 'sun', 'Arise', 'fair', 'sun', 'and', 'kill', 'the', 'envious', 'moon', 'Who', 'is', 'already', 'sick', 'and', 'pale', 'with', 'grief']
+>>> 1 + 2j
+(1+2j)
+>>> (1 + 2j)+(2 + 3j)
+(3+5j)
+>>> c = (1 + 2j0
+     
+SyntaxError: invalid syntax
+>>> c = (1 + 2j)
+>>> c
+(1+2j)
+>>> type(c)
+<class 'complex'>
+>>> "Madam"
+'Madam'
+>>> "Madam" == "madam"
+False
+>>> "Madam" > "madam"
+False
+>>> "Madam" < "madam"
+True
+>>> "Madam".lower() == "madam"
+True
+>>> "Madam".lower()
+'madam'
+>>> 
