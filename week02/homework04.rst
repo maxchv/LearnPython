@@ -8,12 +8,11 @@
 
 Домашнее задание: https://github.com/maxchv/LearnPython/blob/master/week02/homework04.rst
 
-Листинг:	  https://github.com/maxchv/LearnPython/tree/master/week02/listing26.08.2016.txt
+Листинг:	  https://github.com/maxchv/LearnPython/tree/master/week02/examples/listing26.08.2016.txt
 
-Примеры на занятии: https://github.com/maxchv/LearnPython/tree/master/week02/list.py
+Примеры на занятии: https://github.com/maxchv/LearnPython/tree/master/week02/examples/list.py
 
-Видео: https://youtu.be/RQ0OyTMqjq4
-       https://youtu.be/AIvcv2WFh6s
+Видео: https://youtu.be/RQ0OyTMqjq4, https://youtu.be/AIvcv2WFh6s
 
 Задание 1
 ---------
