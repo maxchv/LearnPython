@@ -1,0 +1,15 @@
+===================
+Домшанее задание 04
+===================
+
+Материалы занятия: https://github.com/maxchv/LearnPython/tree/master/week02
+
+Слайды:	          https://github.com/maxchv/LearnPython/tree/master/week02/05.Lists.pptx
+
+Домашнее задание: https://github.com/maxchv/LearnPython/blob/master/week02/homework04.rst
+
+Листинг:	  https://github.com/maxchv/LearnPython/tree/master/week02/examples/listing26.08.2016.txt
+
+Примеры на занятии: https://github.com/maxchv/LearnPython/tree/master/week02/examples/list.py
+
+Видео: https://youtu.be/RQ0OyTMqjq4, https://youtu.be/AIvcv2WFh6s

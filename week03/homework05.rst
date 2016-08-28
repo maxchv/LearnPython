@@ -1,18 +1,18 @@
 ===================
-Домшанее задание 05
+Домшанее задание 06
 ===================
 
-Материалы занятия: https://github.com/maxchv/LearnPython/tree/master/week03
+Материалы занятия:  https://github.com/maxchv/LearnPython/tree/master/week03
 
-Слайды:	          https://github.com/maxchv/LearnPython/tree/master/week03
+Слайды:	            https://github.com/maxchv/LearnPython/tree/master/week03
 
-Домашнее задание: https://github.com/maxchv/LearnPython/blob/master/week03/homework05.rst
+Домашнее задание:   https://github.com/maxchv/LearnPython/blob/master/week03/homework05.rst
 
-Листинг:	  
+Листинг:	  	    https://github.com/maxchv/LearnPython/blob/master/week03/examples/listing28.08.2016.py
 
-Примеры на занятии: 
+Примеры на занятии: https://github.com/maxchv/LearnPython/blob/master/week03/examples/tuples.py
 
-Видео: 
+Видео: 				https://youtu.be/m29yVfnYmvQ, https://youtu.be/TLXgWY8NstA
 
 Задание 1
 ---------

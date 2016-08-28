@@ -29,3 +29,9 @@ ListsIntro https://youtu.be/RQ0OyTMqjq4
 ----------
 
 DeepIntoLists	https://youtu.be/AIvcv2WFh6s
+
+28.08.2016
+----------
+
+ReviewLists	https://youtu.be/m29yVfnYmvQ
+TuplesAndDicts	https://youtu.be/TLXgWY8NstA
