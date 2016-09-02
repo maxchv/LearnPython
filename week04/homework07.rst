@@ -6,11 +6,9 @@
 
 Слайды:	            https://github.com/maxchv/LearnPython/tree/master/week04/07.Functions.pptx
 
-Домашнее задание:   https://github.com/maxchv/LearnPython/blob/master/week04/functions.py
+Домашнее задание:   https://github.com/maxchv/LearnPython/blob/master/week04/homeworks/functions.py
 
-Листинг:	  	    https://github.com/maxchv/LearnPython/blob/master/week04/examples/
+Примеры на занятии: https://github.com/maxchv/LearnPython/blob/master/week04/examples/functions.py
 
-Примеры на занятии: https://github.com/maxchv/LearnPython/blob/master/week04/examples/
-
-Видео: 				
+Видео: 				https://youtu.be/rFkGPaPFn4Q https://youtu.be/IWpGrxE1Fy0
 

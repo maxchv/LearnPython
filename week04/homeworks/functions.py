@@ -16,7 +16,7 @@ def square(num):
 	>>> square(5)
 	25
 	"""
-	pass
+	return num * num
 
 def cube(num):
 	"""
