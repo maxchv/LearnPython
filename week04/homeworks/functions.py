@@ -36,7 +36,6 @@ def cube(num):
 	"""
 	pass
 
-# Given a list of numbers return list of squares.
 def listOfSquare(lst):
 	"""
 	Задание 3. Напишите функцию, которая принимает
@@ -55,14 +54,44 @@ def listOfSquare(lst):
 	"""
 	pass
 
-# Given a list of numbers filter even numbers
 
-# test
+def filterEvenNumbers(lst):
+	"""
+	Задание 4. Напишите функцию, список из чисел 
+	и возвращает список четных чисел
+	
+	>>> filterEvenNumbers([1])
+	[]
+	>>> filterEvenNumbers([1, 2])
+	[2]
+	>>> filterEvenNumbers([2, 6, 8])
+	[2, 6, 8]
+	>>> filterEvenNumbers([10, 11, 5])
+	[10]
+	"""
+	pass
 
-# Combine map, filter, sum.
-# Given a list of numbers, find all even numbers and find sum of squares
+def fizzbuzz(num):
+	"""
+	Напишите программу для возврата строк Fizz, Buzz или FizzBuzz при следующих условиях.
+	
+	Если передается аргумент кратный 3, возвратить Fizz; если кратно 5, возвратить Buzz;
+	и если кратно как 3 так и 5, возвратить FizzBuzz.
+	
+	>>> fizzbuzz(3)
+	'Fizz'
+	>>> fizzbuzz(9)
+	'Fizz'
+	>>> fizzbuzz(25)
+	'Buzz'
+	>>> fizzbuzz(15)
+	'FizzBuzz'
+	>>> fizzbuzz(1)
+	None
+	
+	"""
+	pass
 
-# Test
 
 def main():
     import doctest
