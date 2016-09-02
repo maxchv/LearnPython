@@ -47,3 +47,23 @@ print("t[0] =", t[0])
 #t[0] = 100
 print("l[0] =", t[0])
 print("size of tuple:", t.__sizeof__())
+
+## [subcode]
+
+n = int(input ("Введіть ціле число "))
+x = list(range (n+1))
+print (x[1:n+1])
+i = 0
+k = 0
+t = []
+for k in x:
+    p = str(k)*k
+    print (p)
+    s = list(p)
+    t.append(s)
+    print (t)
+    if len(list (t)) == n+1: break
+    print (t)
+    print (t[1:n+1])
+
+
