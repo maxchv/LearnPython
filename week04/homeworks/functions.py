@@ -55,10 +55,6 @@ def listOfSquare(lst):
 	"""
 	pass
 
-# Given a list of numbers filter even numbers
-
-# test
-
 # Combine map, filter, sum.
 # Given a list of numbers, find all even numbers and find sum of squares
 
