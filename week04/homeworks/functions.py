@@ -54,16 +54,24 @@ def listOfSquare(lst):
 	"""
 	pass
 
+<<<<<<< HEAD
 
 def filterEvenNumbers(lst):
 	"""
 	Задание 4. Напишите функцию, список из чисел 
 	и возвращает список четных чисел
+=======
+def filterEvenNumbers(lst):
+	"""
+	Задание 4. Напишите функцию, которая принимает
+	список чисел и возвращает список из четных чисел
+>>>>>>> origin/master
 	
 	>>> filterEvenNumbers([1])
 	[]
 	>>> filterEvenNumbers([1, 2])
 	[2]
+<<<<<<< HEAD
 	>>> filterEvenNumbers([2, 6, 8])
 	[2, 6, 8]
 	>>> filterEvenNumbers([10, 11, 5])
@@ -92,7 +100,34 @@ def fizzbuzz(num):
 	"""
 	pass
 
+=======
+	>>> filterEvenNumbers([0, 5, 3])
+	[0]
+	>>> filterEvenNumbers([-1, 1, 2])
+	[2]
+	>>> filterEvenNumbers([5, 6, 7, 8, 10])
+	[6, 8, 10]
+	"""
+	pass
+>>>>>>> origin/master
 
+def fizzbuzz(num):
+	"""
+	Напишите программу для печати Fizz, Buzz или FizzBuzz, если выполняется одно из условий.
+	Если число кратно 3, печать Fizz; если кратно 5, печать Buzz;
+	и если одновременно кратно 3 и 5 - печать FizzBuzz.
+	
+	>>> fizzbuzz(6)
+	Fizz
+	>>> fizzbuzz(10)
+	Buzz
+	>>> fizzbuzz(15)
+	FizzBuzz
+	>>> fizzbuzz()
+	None
+	"""
+	pass
+	
 def main():
     import doctest
     doctest.testmod()
