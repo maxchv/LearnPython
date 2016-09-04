@@ -35,3 +35,8 @@ DeepIntoLists	https://youtu.be/AIvcv2WFh6s
 
 ReviewLists	https://youtu.be/m29yVfnYmvQ
 TuplesAndDicts	https://youtu.be/TLXgWY8NstA
+
+04.09.2016
+----------
+
+DeepIntoFunctions https://youtu.be/GqUd1JAYJ-g
