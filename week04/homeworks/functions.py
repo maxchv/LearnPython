@@ -46,7 +46,7 @@ def listOfSquare(lst):
 	>>> listOfSquare([1, 2])
 	[1, 4]
 	>>> listOfSquare([0, 5, 3])
-	[0, 25, 3]
+	[0, 25, 9]
 	>>> listOfSquare([-1, 1, 2])
 	[1, 1, 4]
 	>>> listOfSquare([5, 6, 7])

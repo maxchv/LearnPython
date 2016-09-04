@@ -10,5 +10,5 @@
 
 Примеры на занятии: https://github.com/maxchv/LearnPython/blob/master/week04/examples/functions2.py
 
-Видео: 				
+Видео: 				https://youtu.be/GqUd1JAYJ-g
 
