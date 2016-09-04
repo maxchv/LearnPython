@@ -88,27 +88,10 @@ def fizzbuzz(num):
 	>>> fizzbuzz(15)
 	'FizzBuzz'
 	>>> fizzbuzz(1)
-	None
 	
 	"""
 	pass
 
-def fizzbuzz(num):
-	"""
-	Напишите программу для печати Fizz, Buzz или FizzBuzz, если выполняется одно из условий.
-	Если число кратно 3, печать Fizz; если кратно 5, печать Buzz;
-	и если одновременно кратно 3 и 5 - печать FizzBuzz.
-	
-	>>> fizzbuzz(6)
-	Fizz
-	>>> fizzbuzz(10)
-	Buzz
-	>>> fizzbuzz(15)
-	FizzBuzz
-	>>> fizzbuzz()
-	None
-	"""
-	pass
 	
 def main():
     import doctest
