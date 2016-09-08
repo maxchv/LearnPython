@@ -21,6 +21,13 @@ except ValueError:
     print("Вы должны ввести число.")
 except KeyboardInterrupt:
     print("Вы отменили операцию.")
+
+## [subcode]
+
+try:
+    x = int(input("Введите число: "))
+except (ValueError, KeyboardInterrupt):
+    print("Произошла ошибка")
     
 ## [subcode]
 
@@ -45,7 +52,21 @@ else:
     print("Вы ввели число", x)
 finally:
     print("Работа программы завершена")
- 
+
+## [subcode]
+
+try:
+    x = int(input("Введите число: "))
+except ValueError as ex:
+    print("Произошла ошибка: " + ex)
+except KeyboardInterrupt as ex:
+    print("Вы отменили операцию: " + ex)
+else: 
+    print("Вы ввели число", x)
+finally:
+    print("Работа программы завершена")
+
+
 ## [subcode]
     
 import builtins
@@ -59,5 +80,12 @@ for type_name in dir(builtins):
         except:
             pass
             
+## [subcode]
+
+try:
+    raise NameError("Hi")
+except NameError as ex:
+    print("Catch NameError" + ex)
+
 
         
