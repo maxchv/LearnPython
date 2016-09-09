@@ -76,14 +76,46 @@ except Exception as ex:
 
 ## [subcode]
     
-import builtins
-import inspect
+import builtins # импорт всех встроенных типов
+import inspect  # для исследования данных
 for type_name in dir(builtins):
     _type = getattr(builtins, type_name)    
     if inspect.isclass(_type):
         try:
-            if isinstance(_type(), Exception):
+            if isinstance(_type(), BaseException):
                 print(type_name)
         except:
             pass
         
+## [subcode]
+
+def add(a, b):    
+    return int(a) + int(b)
+
+
+try:
+    x = input("x: ")
+    y = input("y: ")
+    z = add(x, y)
+    print(z)
+except TypeError:
+    print("Ошибка вычисления")
+except ValueError as ex:
+    print("Ошибка ValueError", ex)
+except KeyboardInterrupt:
+    print ("Пользователь прервал ввод данных")
+
+## [subcode]
+
+def div(a, b):
+    if b == 0:
+        raise ZeroDivisionError("деление на нуль")
+    return a/b
+try:
+    div(10, 0)
+except ZeroDivisionError as err:
+    print("Ошибка",err)
+
+
+
+

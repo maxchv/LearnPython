@@ -46,3 +46,9 @@ Functions	https://youtu.be/rFkGPaPFn4Q
 ----------
 
 DeepIntoFunctions https://youtu.be/GqUd1JAYJ-g
+
+09.09.2016
+----------
+
+ReviewRecursion  https://youtu.be/s56z9dV8WPs
+Exception	 https://youtu.be/sz7MZy3UMgg
