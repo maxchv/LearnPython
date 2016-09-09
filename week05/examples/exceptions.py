@@ -65,7 +65,14 @@ else:
     print("Вы ввели число", x)
 finally:
     print("Работа программы завершена")
+            
+## [subcode]
 
+try:
+    raise Exception("Happened something wrong")
+    print ("Some text")
+except Exception as ex:
+    print("Catch Exception:", ex)
 
 ## [subcode]
     
@@ -79,13 +86,4 @@ for type_name in dir(builtins):
                 print(type_name)
         except:
             pass
-            
-## [subcode]
-
-try:
-    raise NameError("Hi")
-except NameError as ex:
-    print("Catch NameError" + ex)
-
-
         
