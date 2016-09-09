@@ -1,4 +1,4 @@
-## [subcode]
+## [итеративная функция]
 
 def square(lst):
     l = []
@@ -10,21 +10,19 @@ def square(lst):
 
 print(square(list(range(1, 11))))
 
-## [subcode]
-lst = [1, 2, 3]
+## [функция с рекурсией]
 
-def rsquare(lst):
-    # рекурсия
+lst = [1, 2, 3]
+def rsquare(lst):    
     if len(lst) > 0:
         last = lst.pop()
-        return rsquare(lst) + (last**2,)
+        return rsquare(lst) + (last**2,) # рекурсия
     else:
         return ()
 
 print("sq =",square(lst))
 print("lst =", lst)
 
-while True:
     
 
     

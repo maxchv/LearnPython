@@ -1,19 +1,19 @@
-## [subcode]
+## [потенциально опасная операция]
 def add(x, y):
     return x + y
     
-## [subcode]
+## [перехват исключения]
 def add(x, y):
     try:
         return x + y
     except:
         return "Ошибка вычисления"
 
-## [subcode]
+## [ввод с приведением типа]
 
 x = int(input("Введите число :"))
         
-## [subcode]
+## [перехват исключений заданного типа]
 
 try:
     x = int(input("Введите число: "))
@@ -22,14 +22,14 @@ except ValueError:
 except KeyboardInterrupt:
     print("Вы отменили операцию.")
 
-## [subcode]
+## [перехват исключений заданного типа в одном блоке exception]
 
 try:
     x = int(input("Введите число: "))
 except (ValueError, KeyboardInterrupt):
     print("Произошла ошибка")
     
-## [subcode]
+## [блок else]
 
 try:
     x = int(input("Введите число: "))
@@ -40,7 +40,7 @@ except KeyboardInterrupt:
 else:
     print("Вы ввели число", x)
 
-## [subcode]
+## [блок finally]
 
 try:
     x = int(input("Введите число: "))
@@ -53,7 +53,7 @@ else:
 finally:
     print("Работа программы завершена")
 
-## [subcode]
+## [блок else и finally]
 
 try:
     x = int(input("Введите число: "))
@@ -66,7 +66,7 @@ else:
 finally:
     print("Работа программы завершена")
             
-## [subcode]
+## [порождение исключений]
 
 try:
     raise Exception("Happened something wrong")
@@ -74,7 +74,7 @@ try:
 except Exception as ex:
     print("Catch Exception:", ex)
 
-## [subcode]
+## [перечень стандартных исключений]
     
 import builtins # импорт всех встроенных типов
 import inspect  # для исследования данных
@@ -87,12 +87,11 @@ for type_name in dir(builtins):
         except:
             pass
         
-## [subcode]
+## [перехват исключений вне функции]
 
 def add(a, b):    
     return int(a) + int(b)
-
-
+	
 try:
     x = input("x: ")
     y = input("y: ")
@@ -105,7 +104,7 @@ except ValueError as ex:
 except KeyboardInterrupt:
     print ("Пользователь прервал ввод данных")
 
-## [subcode]
+## [порождение стандартных исключений]
 
 def div(a, b):
     if b == 0:
