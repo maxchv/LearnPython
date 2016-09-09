@@ -1,4 +1,4 @@
-## [subcode]
+## [простой список]
 
 lst = [1, 2, 3]
 
@@ -7,14 +7,14 @@ for x in lst:
     sq.append(x * x)
 print (sq)
 
-## [subcode]
+## [генератор списка]
 lst = [1, 2, 3, 4, 5, 6]
 
 sq = [x * x for x in lst]
 
 print (sq)
 
-## [subcode]
+## [фильтр списка]
 
 lst = [1, 2, 3, 4, 5, 6]
 
@@ -26,7 +26,7 @@ for x in lst:
 
 print (sq)
 
-## [subcode]
+## [генератор с фильтром]
 
 lst = [1, 2, 3, 4, 5, 6]
 
@@ -34,7 +34,7 @@ sq = [x*x for x in lst if x % 2 == 0]
 
 print (sq)
 
-## [subcode]
+## [словарь]
 
 d = {}
 for x in range(1, 16):
@@ -42,12 +42,12 @@ for x in range(1, 16):
 
 print(d)
 
-## [subcode]
+## [генератор словаря]
 
 d = {x: x*x for x in range(1, 16)}
 print(d)
 
-## [subcode]
+## [ввод данных с клавиатуры в список]
 
 data = [input() for x in range(3)]
 print(data)
