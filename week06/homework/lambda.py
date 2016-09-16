@@ -14,7 +14,7 @@ def onlyEven(lst):
     >>> onlyEven([2, 4, 6, 8, 10])
     [2, 4, 6, 8, 10]
     """
-    return list(filter(lambda x: x % 2 == 0, lst))
+    pass
 
 def squareList(lst):
     """
@@ -29,7 +29,7 @@ def squareList(lst):
     >>> squareList([-1, -2, 3, 4])
     [1, 4, 9, 16]
     """
-    return list(map(lambda x: x**2, lst))
+    pass
 
 def squereOnlyEven(lst):
     """
@@ -45,7 +45,7 @@ def squereOnlyEven(lst):
     >>> squereOnlyEven([2, 4, 6, 8, 10])
     [4, 16, 36, 64, 100]
     """
-    return list(map(lambda x: x**2, filter(lambda x: x % 2 == 0, lst)))
+    pass
     
 
 def allUpper(lst):
@@ -60,7 +60,7 @@ def allUpper(lst):
     >>> allUpper(['test'])
     ['TEST']
     """
-    return list(map(str.upper, lst))
+    pass
 
 if __name__ == "__main__":
     import doctest
