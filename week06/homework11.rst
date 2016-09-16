@@ -6,9 +6,9 @@
 
 Слайды:	            https://github.com/maxchv/LearnPython/tree/master/week06/Lambda.pptx
 
-Домашнее задание:  
+Домашнее задание:   https://github.com/maxchv/LearnPython/tree/master/week06/homework/lambda.py
 
-Примеры на занятии:
+Примеры на занятии: https://github.com/maxchv/LearnPython/tree/master/week06/examples/lambda.py
 		
 
-Видео: 				 
+Видео: 	https://youtu.be/bHF10TR4eE0 https://youtu.be/f8p8kpOamFI		 

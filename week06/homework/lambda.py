@@ -1,13 +1,67 @@
-# 1. Write a program which can filter even numbers in a list by using filter function. The list is: [1,2,3,4,5,6,7,8,9,10].
 
-# 2. Write a program which can map() to make a list whose elements are square of elements in [1,2,3,4,5,6,7,8,9,10].
+def onlyEven(lst):
+    """
+    Задание 1.
+    Реализуйте функцию, которая принимает список чисел lst и возвращает
+    список только из четных чисел.
+    При выполнении этого задания используйте функцию filter.
+    Помните, что функция filter возвращает итератор.
 
-# 3. Write a program which can map() and filter() to make a list whose elements are square of even number in [1,2,3,4,5,6,7,8,9,10].
+    >>> onlyEven([1, 2, 3, 4, 5])
+    [2, 4]
+    >>> onlyEven([1, 3, 5])
+    []
+    >>> onlyEven([2, 4, 6, 8, 10])
+    [2, 4, 6, 8, 10]
+    """
+    return list(filter(lambda x: x % 2 == 0, lst))
 
-# 4. Write a program which can filter() to make a list whose elements are even number between 1 and 20 (both included).
+def squareList(lst):
+    """
+    Задание 2.
+    Реализуйте функцию, которая принимает список чисел lst и возвращает
+    список квадратов чисел.
+    При выполенении этого задания использовать функцию map.
+    Помните, что функция map возвращает итератор.
 
-# 5. Write a program which can map() to make a list whose elements are square of numbers between 1 and 20 (both included).
+    >>> squareList([1, 2, 3, 4])
+    [1, 4, 9, 16]
+    >>> squareList([-1, -2, 3, 4])
+    [1, 4, 9, 16]
+    """
+    return list(map(lambda x: x**2, lst))
 
-# 6. Write a function that returns a list of n functions, such that each one, when called, will return the input value, incremented by an increasing number.
-# Do it with a list comprehension, instead of a for loop
-# 
+def squereOnlyEven(lst):
+    """
+    Задание 3.
+    Реализуйте функцию, которая принимает список lst и возвращает
+    сприсок квадратов только четных чисел.
+    При выполенении этого задания использовать функцию map и filter
+
+    >>> squereOnlyEven([1, 2, 3, 4, 5])
+    [4, 16]
+    >>> squereOnlyEven([1, 3, 5])
+    []
+    >>> squereOnlyEven([2, 4, 6, 8, 10])
+    [4, 16, 36, 64, 100]
+    """
+    return list(map(lambda x: x**2, filter(lambda x: x % 2 == 0, lst)))
+    
+
+def allUpper(lst):
+    """
+    Задание 4
+    Реализуйте функцию, которая принимает список строк lst и возвращает
+    список, в котром все строки преобразованы к верхнему регистру.
+    При выполнении этого задания использовать функцию map
+
+    >>> allUpper(['hello', 'world'])
+    ['HELLO', 'WORLD']
+    >>> allUpper(['test'])
+    ['TEST']
+    """
+    return list(map(str.upper, lst))
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
