@@ -9,3 +9,5 @@
 # 5. Write a program which can map() to make a list whose elements are square of numbers between 1 and 20 (both included).
 
 # 6. Write a function that returns a list of n functions, such that each one, when called, will return the input value, incremented by an increasing number.
+# Do it with a list comprehension, instead of a for loop
+# 
