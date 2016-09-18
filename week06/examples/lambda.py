@@ -198,6 +198,30 @@ def walk_lists(l):
 walk_lists([1, 2, 3, 4])
 walk_lists([1, [2, 3], 4])
 
+## [nasted function simple]
+
+def foo():    
+    def max(*args):
+        print("fake max function")
+    #print(locals())
+    max()
+#print(globals())
+foo()
+
+print("max([1,2,3])", max([1,2,3]))
+
+## [nasted function sum]
+
+def summ(current):
+    def add(increment):
+        current += increment
+        return current
+    return add
+s = summ(0)
+print(s(10))
+print(s(10))
+print(s(10))
+
 ## [closure]
 
 def summ(n):
