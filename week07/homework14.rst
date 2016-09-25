@@ -6,7 +6,7 @@
 
 Слайды:	            https://github.com/maxchv/LearnPython/tree/master/week07/regexp.pptx
 
-Домашнее задание:   https://raw.githubusercontent.com/maxchv/LearnPython/master/week07/homework/regexp.py
+Домашнее задание:   https://raw.githubusercontent.com/maxchv/LearnPython/master/week07/homework/parsing.py
 
 Примеры на занятии: https://github.com/maxchv/LearnPython/tree/master/week07/examples/regexp_demo/parse_dou.py
 		
