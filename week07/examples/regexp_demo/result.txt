@@ -1,0 +1,20 @@
+Information Security дайджест #2: Кибервойна и удары украинских хактивистов, зима близко: заклеиваем окна и веб-камеры: https://dou.ua/lenta/digests/information-security-digest-2/
+DevOps дайджест #10 — Docker fork, управление контейнерами, украинский Cloud хостинг, немного о безопасности: https://dou.ua/lenta/digests/devops-digest-10/
+Як почати кар’єру в IT, якщо не вмієш писати код: досвід PM’а: https://dou.ua/lenta/articles/pm-career/
+Continuous Localization — ефективна організація процесу локалізації: https://dou.ua/lenta/articles/localization-2/
+Як вивчитися на програміста: основна таємниця айтішної освіти: https://dou.ua/lenta/columns/main-secret/
+DOU Проектор: Pickoose.com — противодействие закону Мерфи: https://dou.ua/lenta/articles/dou-projector-pickoose/
+Про организацию действительно большой конференции: сайты для взрослых и райдер Ричарда Столмана: https://dou.ua/lenta/columns/big-conference-organization/
+Рейтинг школ по результатам ЗНО-2016. Аналитика: https://dou.ua/lenta/articles/zno-2016/
+Scala дайджест #5: Видео с конференций, процесс эволюции Scala, стеки технологий компаний: https://dou.ua/lenta/digests/scala-digest-5/
+iOS дайджест #11: UI&amp;UX, анімація в iOS, оцінювання мобільних проектів: https://dou.ua/lenta/digests/ios-digest-11/
+Вплив віз H-1B та аутсорсингу на економіку США: https://dou.ua/lenta/columns/h-1b-vs-outsourcing/
+DOU Labs: Как мы в EVO разработали Vagga и контейнеризировали всё: https://dou.ua/lenta/articles/dou-labs-evo-vagga/
+DOU Ревизор в Trionika: «Двухэтажная мансарда, где много дневного света»: https://dou.ua/lenta/articles/dou-revisor-trionika/
+Підготовка додатків до локалізації: https://dou.ua/lenta/articles/localization-1/
+DOU Проектор: Rename.dp.ua — справочник о переименовании улиц Днепра, написанный за 2 дня: https://dou.ua/lenta/articles/dou-projector-rename/
+Пост IT директора в компании не IT профиля: https://dou.ua/lenta/articles/chief-information-officer/
+Автоматизация тестирования: как избежать распространенных ошибок: https://dou.ua/lenta/articles/qa-automation/
+Android дайджест #19: Nougat, RxJava, Dependency Injection: https://dou.ua/lenta/digests/android-digest-19/
+Java дайджест #28: Kotlin — язык месяца: https://dou.ua/lenta/digests/java-digest-28/
+DOU Labs: Как мы строим умный дом в EPAM Garage Kiev: https://dou.ua/lenta/articles/dou-labs-epam-smarthouse/

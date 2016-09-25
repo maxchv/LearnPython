@@ -63,3 +63,8 @@ function2	https://youtu.be/f8p8kpOamFI
 ----------
 
 regexp		https://youtu.be/PcWv_LipLUs
+
+25.09.2016
+----------
+
+parsing		https://youtu.be/E1_6PlAyXdw

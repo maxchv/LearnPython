@@ -1,5 +1,5 @@
 ===================
-Домшанее задание 13
+Домшанее задание 14
 ===================
 
 Материалы занятия:  https://github.com/maxchv/LearnPython/tree/master/week07
@@ -8,7 +8,7 @@
 
 Домашнее задание:   https://raw.githubusercontent.com/maxchv/LearnPython/master/week07/homework/regexp.py
 
-Примеры на занятии: https://github.com/maxchv/LearnPython/tree/master/week07/examples/hellore.py
+Примеры на занятии: https://github.com/maxchv/LearnPython/tree/master/week07/examples/regexp_demo/parse_dou.py
 		
 
-Видео: 	https://youtu.be/PcWv_LipLUs	 
+Видео:  			https://youtu.be/E1_6PlAyXdw	 
