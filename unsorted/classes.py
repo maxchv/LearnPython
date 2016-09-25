@@ -114,6 +114,45 @@ class Github(object):
         self.email = self.get_user_info().get('email', '')
 # Add a class variable children to keep track of all objects created.
 
+# Реализовать класс Person, который отображает запись в книге контактов.
+
+# Класс имеет 4 атрибута:
+# - surname - строка - фамилия контакта (обязательный)
+# - first_name - строка - имя контакта (обязательный)
+# - nickname - строка - псевдоним (опциональный)
+# - birth_date - объект datetime.date (обязательный)
+
+# Каждый вызов класса должен создавать экземпляр (инстанс) класса с указанными
+# атрибутами.
+
+# Также класс имеет 2 метода:
+# - get_age() - считает возраст контакта в полных годах на дату вызова и
+# возвращает строку вида: "27";
+# - get_fullname() - возвращает строку, отражающую полное имя (фамилия + имя)
+# контакта;
+
+# def tests_for_hw5_solution1():
+    # u"""Тесты задачи 1"""
+    # petroff = Person("Petrov", "Petro", "1952-01-02")
+    # ivanoff = Person("Ivanov", "Ivan", "2000-10-20")
+    # sydoroff = Person("Sidorov", "Semen", "1980-12-31", "Senya")
+
+    # assert "first_name" in dir(petroff)
+    # assert "get_fullname" in dir(ivanoff)
+    # assert "nickname" not in dir(petroff)
+    # assert "nickname" in dir(sydoroff)
+
+    # assert petroff.surname == "Petrov"
+    # assert petroff.first_name == "Petro"
+    # assert petroff.get_fullname() == "Petrov Petro"
+    # assert sydoroff.nickname == "Senya"
+
+    # assert petroff.birth_date == datetime.date(1952, 01, 02)
+    # assert isinstance(petroff.birth_date, datetime.date)
+    # assert petroff.get_age() == "62"
+
+# print 'All is Ok!'
+
 def main():
     pass
 
