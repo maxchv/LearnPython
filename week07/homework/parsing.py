@@ -89,10 +89,12 @@ def parse_itstep():
     """
     Задание X.
 
-
+    Распарсить новости на сайте http://itstep.dp.ua/category/news/
+    Вернуть список кортежей - url и заголовок новости
 
     :return:
     """
+    pass
 
 if __name__ == "__main__":
     import doctest
