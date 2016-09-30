@@ -68,3 +68,9 @@ regexp		https://youtu.be/PcWv_LipLUs
 ----------
 
 parsing		https://youtu.be/E1_6PlAyXdw
+
+30.09.2016
+----------
+
+oop		https://youtu.be/3HycS7-I2Jo
+
