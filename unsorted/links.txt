@@ -1,1 +1,3 @@
 http://codefellows.github.io/sea-f2-python-sept14/index.html
+djago examples: http://agiliq.com/books/djenofdjango/index.html
+bootstrap templates: 
