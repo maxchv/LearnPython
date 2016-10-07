@@ -1,9 +1,21 @@
+a = 2
+b = 2
+print(a * b)    # 4
+
+a = "2"
+print(a * b)    # '22'
+
+
+
+
 class A:
+    name = "A"
     def __init__(self):
         print("Init class A")
 
 
 class B(A):
+    name = "B"
     def __init__(self):
         super().__init__()
         print("Init class B")

@@ -74,3 +74,8 @@ parsing		https://youtu.be/E1_6PlAyXdw
 
 oop		https://youtu.be/3HycS7-I2Jo
 
+07.10.2016
+----------
+
+Polimorphism	https://youtu.be/w7RH4U4ZnLM
+
