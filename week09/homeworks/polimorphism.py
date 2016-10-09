@@ -77,52 +77,7 @@ class Circle:
     >>> c.area
     50.26548245743669
     """
-    def __init__(self, d):
-        self.__diameter = d
-
-    @property
-    def diameter(self):
-        return self.__diameter
-
-    @property
-    def radius(self):
-        return self.diameter/2
-
-    @property
-    def area(self):
-        return self.radius * self.radius * math.pi
-
-    def __eq__(self, other):
-        return self.radius == other.radius
-
-    def __ne__(self, other):
-        return self.radius != other.radius
-
-    def __le__(self, other):
-        return self.radius <= other.radius
-
-    def __lt__(self, other):
-        return self.radius < other.radius
-
-    def __ge__(self, other):
-        return self.radius >= other.radius
-
-    def __gt__(self, other):
-        return self.radius > other.radius
-
-    def __iadd__(self, other):
-        self.__diameter += 2*other
-        return self
-
-    def __isub__(self, other):
-        self.__diameter -= 2*other
-        return self
-
-    def __str__(self):
-        return "circle r = {}".format(self.radius)
-
-    def __repr__(self):
-        return str(self)
+    pass
 
 if __name__ == "__main__":
     import doctest
