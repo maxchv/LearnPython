@@ -1,31 +1,3 @@
-
-Skip to content
-Personal
-Open source
-Business
-Explore
-Pricing
-Blog
-Support
-This repository
-
-6
-9
-
-    27
-
-kracekumar/pythonbyexamplestutorial
-Code
-Issues 0
-Pull requests 0
-Pulse
-Graphs
-pythonbyexamplestutorial/may-workshop/02-decorator-sol.py
-4cc78ab on 15 Feb 2015
-@patrickFalvey patrickFalvey Update 02-decorator-sol.py
-@kracekumar
-@patrickFalvey
-118 lines (84 sloc) 2.53 KB
 # -*- coding: utf-8 -*-
 
 import sys
@@ -144,7 +116,5 @@ if __name__ == "__main__":
 
     main()
 
-    Contact GitHub API Training Shop Blog About 
 
-    © 2016 GitHub, Inc. Terms Privacy Security Status Help 
 
