@@ -60,10 +60,10 @@ foo()
 #foo = decor(foo)
 foo()
 
-def repeater(count: int) -> None:
-    def decorator(function) -> type:
+def repeater(count):
+    def decorator(function):
         @functools.wraps(function)
-        def wrapper(*args, **kwargs) -> type:
+        def wrapper(*args, **kwargs):
             for i in range(count):
                 function(*args, **kwargs)
         return wrapper
@@ -74,3 +74,28 @@ def boo() -> None:
     print("boo")
 
 boo()
+
+def singletor(cls):
+    instance = None
+
+    @functools.wraps(cls)
+    def wraper(*args, **kwargs):
+        nonlocal instance
+        if instance is None:
+            instance = cls(*args, **kwargs)
+        return instance
+    return wraper
+
+@singletor
+class Foo():
+    def __init__(self):
+        self.foo = "foo"
+
+foo = Foo()
+print(foo.foo)
+print(id(foo))
+foo.foo = "boo"
+boo = Foo()
+print(id(boo))
+print(boo.foo)
+
