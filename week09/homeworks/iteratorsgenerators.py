@@ -4,6 +4,7 @@ Homework 18
 Subject: Static methods, Class methods, Iterators
 """
 
+
 class MathCls:
     """
     Задание 1
@@ -24,6 +25,7 @@ class MathCls:
     5.0
     """
     pass
+
 
 class SquareIterator:
     """
@@ -52,6 +54,7 @@ class SquareIterator:
     StopIteration
     """
     pass
+
 
 class Range:
     """

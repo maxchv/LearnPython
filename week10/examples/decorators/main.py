@@ -75,7 +75,7 @@ def boo() -> None:
 
 boo()
 
-def singletor(cls):
+def singleton(cls):
     instance = None
 
     @functools.wraps(cls)
@@ -86,7 +86,7 @@ def singletor(cls):
         return instance
     return wraper
 
-@singletor
+@singleton
 class Foo():
     def __init__(self):
         self.foo = "foo"
