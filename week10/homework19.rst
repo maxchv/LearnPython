@@ -11,4 +11,4 @@
 Примеры на занятии: https://github.com/maxchv/LearnPython/tree/master/week10/examples/decorators
 		
 
-Видео: 	
+Видео: 				https://youtu.be/HdtsuX4ahR4 https://youtu.be/JGH00fTtOk8
