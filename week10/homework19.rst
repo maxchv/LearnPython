@@ -1,14 +1,14 @@
 ===================
-Домшанее задание 
+Домшанее задание 10
 ===================
 
-Материалы занятия:  https://github.com/maxchv/LearnPython/tree/master/week0
+Материалы занятия:  https://github.com/maxchv/LearnPython/tree/master/week10
 
-Слайды:	            https://github.com/maxchv/LearnPython/tree/master/week0
+Слайды:	            https://github.com/maxchv/LearnPython/tree/master/week10/decorators.pptx
 
-Домашнее задание:   
+Домашнее задание:   https://github.com/maxchv/LearnPython/tree/master/week10/homework/decorators.py
 
-Примеры на занятии: https://github.com/maxchv/LearnPython/tree/master/week0
+Примеры на занятии: https://github.com/maxchv/LearnPython/tree/master/week10/examples/decorators
 		
 
 Видео: 	
