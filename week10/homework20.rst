@@ -1,14 +1,14 @@
 ===================
-Домшанее задание 
+Домшанее задание 20
 ===================
 
-Материалы занятия:  https://github.com/maxchv/LearnPython/tree/master/week0
+Материалы занятия:  https://github.com/maxchv/LearnPython/tree/master/week10
 
-Слайды:	            https://github.com/maxchv/LearnPython/tree/master/week0
+Слайды:	            https://github.com/maxchv/LearnPython/tree/master/week10/html/index.html
 
-Домашнее задание:   
+Домашнее задание:   https://github.com/maxchv/LearnPython/tree/master/week10/homeworks/html.txt
 
-Примеры на занятии: https://github.com/maxchv/LearnPython/tree/master/week0
+Примеры на занятии: https://github.com/maxchv/LearnPython/tree/master/week10/examples/index.html
 		
 
-Видео: 	
+Видео: 				https://youtu.be/eC-Y6jXb0a0
