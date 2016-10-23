@@ -1,0 +1,883 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+
+    <title>Введение в HTML/CSS</title>
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+    <link rel="stylesheet" href="reveal/css/reveal.css">
+    <link rel="stylesheet" href="reveal/css/theme/gdidefault.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <!-- light editor-->
+    <link rel="stylesheet" href="reveal/lib/css/zenburn.css">
+    <!-- dark editor<link rel="stylesheet" href="reveal/lib/css/dark.css">-->
+
+    <!-- If use the PDF print sheet so students can print slides-->
+
+    <link rel="stylesheet" href="reveal/css/print/pdf.css" type="text/css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+        <!-- Opening slide -->
+        <section>
+            <img src="http://brasil.itstep.org/wp-content/themes/itstep/images/nav-main/logo.png">
+            <h3 style="margin-top: 50px;">Введение в HTML/CSS</h3>
+            <!--<h4>Открытый урок</h4>-->
+        </section>
+
+        <!-- Welcome-->
+
+
+        <!-- What is HTML?-->
+        <section>
+            <h3>Что такое HTML?</h3>
+            <p>HTML это язык разметки используемый для создания веб-сайтов</p>
+            <img class="fragment" src="images/homepage-view.png">
+        </section>
+
+        <section>
+            <h3>Что такое HTML?</h3>
+            <p>Если вы посмотрите на 'код страницы', то увидите</p>
+            <img class="fragment" src="images/homepage-html.png">
+        </section>
+
+        <!-- History of HTML-->
+        <section>
+            <h3>История HTML</h3>
+            <ul>
+                <li class="fragment">Создан Тимом Бернерсом-Ли
+                    <a target="_blank"
+                       href="https://ru.wikipedia.org/wiki/%D0%91%D0%B5%D1%80%D0%BD%D0%B5%D1%80%D1%81-%D0%9B%D0%B8,_%D0%A2%D0%B8%D0%BC"><img
+                            class="fragment" width="350"
+                            src="http://informaticslib.ru/news/item/f00/s00/n0000087/pic/000000.jpg"></a>
+                </li>
+                <li class="fragment">Создавался для обмена научными публикациями</li>
+                <li class="fragment">Первая веб-страница создана 6 августа 1991 года</li>
+                <li class="fragment">Стандартизирован Консорциумом Всемирной паутины (W3C)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>История HTML</h3>
+            <ul>
+                <li class="fragment"><span class="yellow">H</span>yper<span class="yellow">T</span>ext <span
+                        class="yellow">M</span>arkup <span class="yellow">L</span>anguage
+                </li>
+                <li class="fragment">Ранние 90е</li>
+                <li class="fragment">HTML 4 в 1997</li>
+                <li class="fragment">XHTML в 2000</li>
+                <li class="fragment">HTML 5
+                    <time datetime="2014-10-28">28 октября 2014</time>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Terms-->
+        <section>
+            <h3>Определения</h3>
+            <ul>
+                <li class="fragment">
+                    <div class="green">Веб-дизайн</div>
+                    <div>Проектирование пользовательских веб-интерфейсов для сайтов или веб-приложений.</div>
+                </li>
+                <li class="fragment">
+                    <div class="green">Веб-разработка</div>
+                    <div>Процесс создания веб-сайта или веб-приложения.</div>
+                </li>
+                <li class="fragment">
+                    <div class="green">Front end</div>
+                    <div>Разработка визуальных элементов веб-сайта или веб-приложения (на стороне клиента)</div>
+                </li>
+                <li class="fragment">
+                    <div class="green">Back end</div>
+                    <div>Разработка функциональных элементов веб-сайта или веб-приложения (серверная сторона)</div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Nitty gritty 1 - Clients and servers -->
+        <section>
+            <h3>Клиенты и серверы</h3>
+            <p>Как компьютер получает доступ к веб-сайтам</p>
+            <img class="fragment" width="90%" src="images/client-server.png"/>
+        </section>
+
+        <!-- Nitty gritty 2 - Tools -->
+        <section>
+            <h3>Инструменты разработчика</h3>
+            <ul>
+                <li class="fragment">
+                    <div class="yellow">Браузер</div>
+                    <div class="green">Chrome</div>
+                    <div>Firefox</div>
+                </li>
+                <li class="fragment">
+                    <div class="yellow">Инструменты разработчика</div>
+                    <div class="green">Chrome - Инструмент разработчика</div>
+                    <div>Firefox - Инструменты разметки</div>
+                </li>
+                <li class="fragment">
+                    <div class="yellow">Текстовые редакторы</div>
+                    <div>TextWrangler - Mac</div>
+                    <div>Notepad++ - Windows</div>
+                    <div>Sublime Text - Linux, Mac или Windows</div>
+                    <div class="green">WebStrorm - Linux, Mac или Windows</div>
+                    <div>gedit - Linux</div>
+                </li>
+            </ul>
+        </section>
+
+                <!-- Nitty gritty 2 - Tools -->
+        <section>
+            <h3>Как создать HTML документ?</h3>
+                <ul>
+                    <li class="fragment">
+                        <div>В любом редакторе создать файл с расширением .html</div>
+                    </li>
+                    <li class="fragment">
+                        <div>Имя основного файла называем index.html</div>
+                    </li>
+                    <li class="fragment">
+                        <div>И начинаем писать HTML теги</div>
+                    </li>
+                </ul>
+        </section>
+
+        <section>
+            <h3>Начало: Структура директории</h3>
+            <p>Все файлы статического сайта должны находиться в одной директории.</p>
+
+            <div class="left" style="width: 45%;">
+                <p class="left-align"><strong>Содержимое:</strong></p>
+                <ul>
+                    <li>HTML файлы</li>
+                    <li>CSS файлы</li>
+                    <li>Изображения</li>
+                    <li>Файлы JavaScript</li>
+                    <li>Остоальные файлы, которые должны быть доступны на сайте</li>
+                </ul>
+                <p class="left-align">
+                    <small>Примечание: Имена файлов не должны включать пробелы или
+                        специальные символы. Имена файлов чувствительны к регистру.
+                    </small>
+                </p>
+            </div>
+            <div class="right" style="width: 45%;">
+                <img src="images/folderstructure1.png"/>
+            </div>
+        </section>
+        <!-- Example of site we'll be making-->
+        <section>
+            <h3>Что мы будем создавать?</h3>
+            <div style="width: 100%;">
+                <p>Сегодня мы рассмотрим создаваие статических страницы сайта с нуля используя
+                    параграфы, заголовки, ссылки, изображения и списки.</p>
+            </div>
+            <div style="width: 100%;">
+                <a href="images/site.jpg" target="_blank"><img src="images/site.jpg"/></a>
+            </div>
+        </section>
+
+        <!-- Roles of HTML v CSS -->
+        <section>
+            <h3>Анатомия веб-сайта</h3>
+            <div style="margin-top: 100px" class="fragment">
+                <div class="blue"> Необходимый контент</div>
+            </div>
+            <div class="fragment"><span class="blue">+ HTML: </span>Структура</div>
+            <div class="fragment"><span class="blue">+ CSS: </span>Представление</div>
+            <div class="fragment">
+                <div class="blue">= Ваш веб-сайт</div>
+            </div>
+
+            <p style="margin-top: 50px" class="fragment">Веб-сайт - это способ представления контента миру,
+                HTML и CSS предоставляет этот контент &amp; делает его привлекательным на вид.</p>
+        </section>
+
+        <section>
+            <h3>Анатомия веб-сайта</h3>
+            <div class="yellow">Конкретный пример</div>
+            <ul>
+                <li class="fragment"><p><span class="blue">Параграф</span> - это контент</p></li>
+                <li class="fragment">
+                    <div style="font-size: 80%">Размещение контента внутри HTML тега для представления
+                        его в виде параграфа - это Структура
+                    </div>
+                    <pre><code class="html">
+                &lt;p>A paragraph is your content&lt;/p>
+              </code></pre>
+                </li>
+                <li class="fragment">
+                    <div style="font-size: 80%">Задание шрифта параграфа синим размером 18pt - это презентация</div>
+                    <p class="blue">A paragraph is your content</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- HTML element-->
+        <section>
+            <h3>Анатомия HTML элемента</h3>
+            <ul>
+                <li class="fragment">
+                    <strong class="blue">Элемент</strong>
+                    <ul>
+                        <li>Индивидуальный компонент HTML документа</li>
+                        <li>Параграф, заголовок, таблица, список, div, ссылка, изобаражение, и т.д.</li>
+                    </ul>
+                </li>
+                <li class="fragment">
+                    <strong class="blue">Тег</strong>
+                    <ul>
+                        <li>Отмечает начало &amp; конец элемента</li>
+                        <li>Открывающий тег и закрыващюий тег
+                        <li>Имя тага определяет его назначение</li>
+                        <pre><code class="html">&lt;tagname>Содержимое внутри&lt;/tagname></code></pre>
+                        </li>
+                        <li>
+                            <pre><code class="html">&lt;p>Это простой параграф.&lt;/p></code></pre>
+                        </li>
+                    </ul>
+        </section>
+        <!--anatomy of a tag -->
+        <section>
+            <h3>Тег</h3>
+            <img src="images/tagbreakdown.png" width="70%" alt="Tag breakdown" style="border: none; box-shadow: none;"/>
+        </section>
+        <section>
+            <h3>Анатомия HTML элемента</h3>
+            <ul>
+                <li class="fragment">
+                    <strong class="blue">Элемент контейнер</strong>
+                    <ul>
+                        <li>Элемент, который содержит другой элемент</li>
+                        <li>Параграф (&lt;p>) содержит текст</li>
+                    </ul>
+                </li>
+                <li class="fragment">
+                    <strong class="blue">Самостоятельный элемент</strong>
+                    <ul>
+                        <li>Элемент, который не может содержать другие элементы (только атрибуты)</li>
+                        <li>
+<pre><code class="html">&lt;br/>
+&lt;img/> 
+</code></pre>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Анатомия HTML элемента</h3>
+            <ul>
+                <li class="fragment">
+                    <strong class="blue">Атрибуты</strong>
+                    <ul>
+                        <li>Предоставляют дополнительную информацию о HTML элементе</li>
+                        <li>Класс, идентификатор, язык, стиль, источник</li>
+                        <li>Помещается внутри открытого тега перед закрыващюейся уголвой скопбкой.</li>
+                    </ul>
+                </li>
+                <li class="fragment">
+                    <strong class="blue">Значение</strong>
+                    <ul>
+                        <li>Значение - это значения ассоциированные с данным атрибутом.</li>
+                        <li>Значения должны размещаться в кавыках (одинарных или двойных).</li>
+                        <li>
+<pre><code class="html">&lt;div id="copyright">&copy; itstep.org 2016&lt;/div>
+&lt;img src="my_picture.jpg" /> 
+&lt;a href="http://itstep.dp.ua">GDI&lt;/a>
+</code></pre>
+                        </li>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <!-- HTML Page-->
+        <section>
+            <h3>Doctype</h3>
+            <p class="fragment">Первая строка HTML страницы - это doctype (тип документа),
+                который указывает браузеру на версию языка разметки.</p>
+            <pre class="fragment"><code class="html">
+          &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML
+          4.01 Transitional//EN" "http://
+          www.w3.org/TR/html4/loose.dtd">
+        </code></pre>
+            <pre class="fragment"><code class="html">
+          &lt;!DOCTYPE html>
+        </code></pre>
+            <p class="fragment">
+                <small>* doctype не чувствителен к регистру. <br/>DOCtype, doctype, DocType и DoCtYpe являются допустимыми
+                    вариантами записи.
+                </small>
+            </p>
+        </section>
+
+        <section>
+            <h3>HTML тег</h3>
+            <p>После &lt;!doctype> все содержимое html страницы размещается между &lt;html> тегами.</p>
+            <pre><code class="html">
+            &lt;!DOCTYPE html>
+            &lt;html>
+
+            &lt;/html>
+          </code></pre>
+        </section>
+
+        <section>
+            <h3>head & body</h3>
+            <div class="left-align">
+                <p class="fragment"><span class="green">Заголовок (<code>head</code>):</span> Заголовок содержит
+                    заголовок страницы (<code>title</code>)
+                    &amp; метаинформацию (<code>meta</code>) о странице.
+                    Матаинформация не видна пользователю, но служит важным целям.
+                    В частности, указывается автор и описание страницы, ключевые слова, что
+                    важно для поискового движка.
+                    Также указывается кодировка страницы и многое другое. </p>
+                <p class="fragment"><span class="green">Тело (<code>body</code>):</span> В тело включают содержимое
+                    страницы.
+                    Все, что находится внутри тега <code>body</code> видно пользователю.</p>
+            </div>
+        </section>
+        <!--example of head and body tags-->
+        <!--<section>-->
+            <!--<h3>Теги <code>head</code> и <code>body</code>: Пример</h3>-->
+            <!--<img src="images/example-headbody.png" alt="example of head and body"/>-->
+        <!--</section>-->
+        <!--<section>-->
+            <!--<h3>Head and Body Tags</h3>-->
+            <!--<pre><code class="html">-->
+            <!--&lt;!DOCTYPE html>-->
+            <!--&lt;html>-->
+               <!--&lt;head>-->
+                <!--&lt;title>Title of the page &lt;/title>-->
+               <!--&lt;/head>-->
+               <!--&lt;body>-->
+                <!--The page content here.-->
+               <!--&lt;/body>-->
+            <!--&lt;/html>-->
+          <!--</code></pre>-->
+        <!--</section>-->
+
+        <!-- Develop it -->
+        <section class="hide-pdf">
+            <h3>Время разработки!</h3>
+            <p>Давайте создадим нашу веб-страницу, зададим doctype, head, title и body.</p>
+            <p>Позже можно будет добавить содержимое!</p>
+        </section>
+        <!-- Nesting-->
+        <section>
+            <h3>Вложенность</h3>
+            <p>Все элементы "вложены" один в другой</p>
+            <p>
+                <small>Например, наличие тега &lt;p> внутри тега &lt;body>.
+                    Тег &lt;p> вложен в &lt;body>
+                </small>
+            </p>
+            <img src="images/owls.jpg"/>
+
+            <!--<p>Whichever element OPENS first CLOSES last</p>-->
+        </section>
+
+        <!--example of nesting -->
+        <section>
+            <h3>Вложенность: Пример</h3>
+            <p>Элементы 'вложены' в тег &lt;body&gt;.</p>
+            <pre><code>
+        	&lt;body&gt;
+        	   &lt;p&gt;A paragraph inside the body tag&lt;/p&gt;
+        	&lt;/body&gt;
+        	</code></pre>
+            <p>Параграф 'вложен' в списочный элемент.</p>
+            <pre><code>
+        	&lt;ul&gt;
+        	   &lt;li&gt;
+        	      &lt;p&gt;A paragraph inside a list item&lt;/p&gt;
+        	   &lt;/li&gt;
+        	&lt;/ul&gt;
+        	</code></pre>
+        </section>
+        <!-- Elements -->
+        <!-- Paragraphs-->
+        <section>
+            <h3>Элемент: Параграф</h3>
+            <div>
+                <div class="left" style="width:50%">
+<pre><code>
+  &lt;p>Paragraph 1&lt;/p>
+  &lt;p>Paragraph 2&lt;/p>
+  &lt;p>Paragraph 3&lt;/p>
+</code></pre>
+                    <pre><code>
+  &lt;p>Paragraph 1&lt;/p> &lt;p>Paragraph 2&lt;/p>  &lt;p>Paragraph 3&lt;/p>
+</code></pre>
+                    <pre><code>
+  &lt;p>Paragraph 1&lt;/p> 
+  
+  
+  &lt;p>Paragraph 2&lt;/p>  
+  &lt;p>Paragraph 3&lt;/p>
+</code></pre>
+                </div>
+                <div>
+                    <p>Paragraph 1</p>
+                    <p>Paragraph 2</p>
+                    <p>Paragraph 3</p>
+
+                </div>
+                <div class="clear"></div>
+                <p>
+                    <small>* Пробельные символы только для читабельности!</small>
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h3>Пример: Параграфы</h3>
+            <p>Параграфыы позволяют форматировать содержимое в читабельном виде.</p>
+            <img src="images/example-paragraphs.png" alt="Example of Paragraphs in the wild"/>
+            <p>
+                <small>* Вид параграфов можно настраивать через CSS</small>
+            </p>
+        </section>
+
+        <!-- Headings-->
+        <section>
+            <h3>Элемент: Заголовки</h3>
+            <div>
+                <div class="left" style="width:50%">
+<pre><code>
+  &lt;h1>Heading 1&lt;/h1>
+  &lt;h2>Heading 2&lt;/h2>
+  &lt;h3>Heading 3&lt;/h3>
+  &lt;h4>Heading 4&lt;/h4>
+  &lt;h5>Heading 5&lt;/h5>
+  &lt;h6>Heading 6&lt;/h6>
+</code></pre>
+                </div>
+                <div class="left" style="width:50%">
+                    <h1 style="font-size: 120%">Heading 1</h1>
+                    <h2 style="font-size: 110%">Heading 2</h2>
+                    <h3 style="font-size: 105%">Heading 3</h3>
+                    <h4 style="font-size: 95%">Heading 4</h4>
+                    <h5 style="font-size: 85%">Heading 5</h5>
+                    <h6 style="font-size: 75%">Heading 6</h6>
+                </div>
+                <div class="clear"></div>
+                <p>* Номер заголовка указывает на иерархию, а не на размер.</p>
+            </div>
+        </section>
+
+        <!--heading examples-->
+        <section>
+            <h3>Пример: Заголовки</h3>
+            <img src="images/example-headings.png" alt="Example of headings"/>
+        </section>
+        <!-- Em and Strong-->
+        <section>
+            <h3>Форматированный текст</h3>
+            <div>
+                <div class="left" style="width:50%">
+<pre><code>
+&lt;p>
+  Here is a paragraph with &lt;em>Emphasized&lt;/em> text and
+    &lt;strong>Important&lt;/strong> text.
+&lt;/p>
+</code></pre>
+                </div>
+                <div class="left left-align" style="width:50%">
+                    <p>
+                        Here is a paragraph with <em>Emphasized</em> text and <strong>Important</strong> text.
+                    </p>
+                </div>
+                <div class="clear"></div>
+                <br/>
+                <br/>
+                <p>* Примечание: em и strong указывают на значение текста. Если необходимо иметь курсивное отображение
+                    текст без привязке к смысловой нагрузке, то необходимо использовать CSS.</p>
+            </div>
+        </section>
+        <!--develop it!-->
+        <section class="hide-pdf">
+            <h3>Время разработки!</h3>
+            <p class="left-align">Давайте добавим некоторый контент на нашу страницу!</p>
+            <p class="left-align">Добавте по одному заголовку каждого уровня и 1-2 коротких параграфа под ними. </p>
+            <p class="left-align">Создайте некий <em>акцентированный</em> и <strong>выделенный</strong> текст
+                внутри параграфов.</p>
+        </section>
+
+        <!-- Links-->
+        <section>
+            <h3>Элемент: Ссылка</h3>
+            <p>Ссылки имеют три компонента</p>
+            <ul>
+                <li>Тег: &lt;a>&lt;/a></li>
+                <li>Атрибут href: "http://itstep.dp.ua"</li>
+                <li>Атрибут title: "ItStep Dnipro"</li>
+            </ul>
+            <pre><code>
+&lt;a href="http://itstep.dp.ua" title="ItStep Dnipro">itstep&lt;/a>
+</code></pre>
+            <p><a href="http://itstep.dp.ua" title="ItStep Dnipro">itstep</a></p>
+            <p>Тег &lt;a&gt; может включать текст или картинки, преваращая их в ссылки</p>
+        </section>
+
+        <!-- Link Attributes -->
+        <section>
+            <h3>Атрибуты ссылок</h3>
+            <p>Ссылки могут иметь атрибуты, которые указывают браузеру на различные действия, такие как открывать
+                ссылку в новой вкладке или запускать почтовую программу.</p>
+            <pre><code>
+&lt;a href="home.html" target="_blank">Link Text&lt;/a>
+        	</code></pre>
+            <p>
+                <small>Ссылка открывается в новом окне/вкладке с атрибутом <strong>target="_blank"</strong></small>
+            </p>
+            <!-- Change email to fit your chapter's needs-->
+            <pre><code>
+&lt;a href="mailto:shaptala@itstep.org">E-mail me!&lt;/a>
+        	</code></pre>
+            <p>
+                <small>Ссылка открывает почтовую программу благодоря добавлению <strong>mailto:</strong>
+                    прямо перед email адресом.
+                </small>
+            </p>
+
+        </section>
+        <!-- relative & absolute links -->
+        <!--<section>-->
+            <!--<h3>Relative vs. Absolute paths for links & images</h3>-->
+            <!--<ul>-->
+                <!--<li>-->
+                    <!--<strong class="blue">Relative</strong>-->
+                    <!--<ul>-->
+                        <!--<li>Relative paths change depending upon the page the link is on.-->
+                            <!--<ul>-->
+                                <!--<li>-->
+                                    <!--<small>Links within the same directory need no path information. <code class="blue">"filename.jpg"</code>-->
+                                    <!--</small>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                    <!--<small>Subdirectories are listed without preceding slashes. <code class="blue">"images/filename.jpg"</code>-->
+                                    <!--</small>-->
+                                <!--</li>-->
+                            <!--</ul>-->
+                        <!--</li>-->
+                    <!--</ul>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<strong class="blue">Absolute</strong>-->
+                    <!--<ul>-->
+                        <!--<li>Absolute paths refer to a specific location of a file, including the domain.-->
+                            <!--<small><code class="blue">"http://www.girldevelopit.com/chapters/detroit"</code></small>-->
+                        <!--</li>-->
+                        <!--</li>-->
+                        <!--<li>Typically used when pointing to a link that is not within your own domain.</li>-->
+                    <!--</ul>-->
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</section>-->
+        <!-- Lets develop it-->
+        <section class="hide-pdf">
+            <h3>Время разработки!</h3>
+            <p>Добавте несколько ссылок на сайт!</p>
+            <p>Добавте ссылки, которые открывают новые вклдки и ссылки с e-mail адресом.</p>
+        </section>
+
+        <!-- Images-->
+        <section>
+            <h3>Элемент: Изображения</h3>
+            <p>Изображения включают три компонента</p>
+            <ul>
+                <li>Тег: &lt;img/></li>
+                <li>Атибут src: "http://itstep.dp.ua/logo.png"</li>
+                <li>Атрибут alt: "Logo"</li>
+            </ul>
+            <pre><code>
+&lt;img src ="http://itstep.dp.ua/logo.png" alt = "Logo"/>
+</code></pre>
+            <img src="http://itstep.dp.ua/wp-content/themes/itstep/images/nav-main/logo-ru.png" alt="Logo"/>
+            <p>
+                <small>* Примечание: Этот тег первый пример самодостаточного элемента.</small>
+            </p>
+
+        </section>
+        <!-- Line Break-->
+        <section>
+            <h3>Элемент: Разрыв строки</h3>
+            <div>
+                <div class="left" style="width:50%">
+<pre><code>
+&lt;p>
+  Imagine there's no Heaven &lt;br/>
+  It's easy if you try &lt;br/>
+  No hell below us  &lt;br/>
+  Above us only sky
+&lt;/p>
+</code></pre>
+                </div>
+                <div class="left left-align" style="width:50%">
+                    <p>
+                        Imagine there's no Heaven <br/>
+                        It's easy if you try <br/>
+                        No hell below us <br/>
+                        Above us only sky
+                    </p>
+                </div>
+                <div class="clear"></div>
+                <br/>
+                <br/>
+            </div>
+        </section>
+
+        <!-- Develop it! -->
+        <section>
+            <h3>Время разработки!</h3>
+            <p>Давайте добавим несколко изображений на нашу страницу.</p>
+            <p>Можно даже преваратить картинку в ссылку!</p>
+        </section>
+        <!-- Lists-->
+        <section>
+            <h3>Элемент: Маркированный и нумерованный списки</h3>
+            <div>
+                <div class="left" style="width:50%">
+<pre><code>
+  &lt;ul>
+    &lt;li>List Item&lt;/li>
+    &lt;li>AnotherList Item&lt;/li>
+  &lt;/ul>
+</code></pre>
+                    <pre><code>
+  &lt;ol>
+    &lt;li>List Item&lt;/li>
+    &lt;li>AnotherList Item&lt;/li>
+  &lt;/ol>
+</code></pre>
+                </div>
+                <div class="left" style="width:50%">
+                    <p>Маркированный список
+                    <ul>
+                        <li>List Item</li>
+                        <li>AnotherList Item</li>
+                    </ul>
+                    <br/>
+                    <br/>
+                    <p>Нумерованный список
+                    <ol>
+                        <li>List Item</li>
+                        <li>AnotherList Item</li>
+                    </ol>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </section>
+
+        <!-- example of lists -->
+        <section>
+            <h3>Списки: Примеры</h3>
+            <p>Списки могут быть использованы для органицации любой связанной последовательности.</p>
+            <img src="images/example-lists.png" width="70%" alt="Examples of lists"/>
+            <p>
+                <small>Вы удивитесь как часто используются списки в веб-дизайне.</small>
+            </p>
+        </section>
+
+        <!-- Develop it!-->
+        <section class="hide-pdf">
+            <h3>Время разработки!</h3>
+            <p>Давайте добавим по одному маркированному и нумерованному списку к нашей странице.</p>
+            <p>Можно сделать список ссылок или даже списко изображений!</p>
+        </section>
+        <!--Comments-->
+        <section>
+            <h3>Коментарии</h3>
+            <p>Можно добавить коментарии в исходный код, которые не будут видны при просмотре страницы в веб-браузере.</p>
+            <pre><code>
+&lt;!-- Comment goes here -->
+        	</code></pre>
+            <p>
+                <small>
+                    Коментарии могут быть полезны для пояснения кода.
+                </small>
+            </p>
+            <pre><code>
+&lt;!-- Beginning of header -->
+   &lt;div id="header">Header Content &lt;/div>
+&lt;!-- End of header -->
+
+&lt;!--   
+  &lt;ol>
+    &lt;li>List Item&lt;/li>
+    &lt;li>Another List Item&lt;/li>
+  &lt;/ol> 
+--> 
+        	</code></pre>
+        </section>
+
+        <section>
+            <h3>Таблицы</h3>
+            <p>Таблицы позволяют представить сложную информацию в табличном виде.</p>
+            <p>Таблицы сосостоят из строк и колонок.</p>
+
+            <div>
+                <div class="left" style="width:50%">
+<pre><code>
+&lt;table>
+  &lt;tr> 
+    &lt;th>Head&lt;/th>
+    &lt;th>Head&lt;/th>
+  &lt;/tr>
+  &lt;tr> 
+    &lt;td>Data&lt;/td>
+    &lt;td>Data&lt;/td>
+  &lt;/tr>
+&lt;/table>
+</code></pre>
+                </div>
+                <div class="left left-align" style="width:50%">
+                    <table style="border: 1px solid">
+                        <tr>
+                            <th style="border: 1px solid">Head</th>
+                            <th style="border: 1px solid">Head</th>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid">Data</td>
+                            <td style="border: 1px solid">Data</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </section>
+
+        <!-- Table Examples -->
+        <section>
+            <h3>Таблицы: Примеры</h3>
+            <p>Таблицы могут быть стилизованы при помощи CSS.</p>
+            <img src="images/example-tables.png" alt="Example of tables"/>
+        </section>
+
+
+        <!-- Character codes-->
+        <section>
+            <h3>Коды символов</h3>
+            <p>Существует много специальных символов каждый из которых имеет свой уникальный код</p>
+            <div class="left" style="width:50%">
+                <ul>
+                    <li>Дельта: &amp;delta; &delta;</li>
+                    <li>Символ сopyright: &amp;copy; &copy;</li>
+                    <li>Знак меньше: &amp;lt; &lt;</li>
+                    <li>Полный список доступен по адресу <a href="http://htmlandcssbook.com/extras/html-escape-codes/"
+                                                       target="_blank">htmlandcssbook.com</a></li>
+                </ul>
+            </div>
+            <div class="right" style="width: 50%;">
+                <img src="images/example-characters.png" alt="Example of Characters"/>
+            </div>
+
+        </section>        <!-- -->
+
+        <section>
+            <h3>Как мне запомнить все теги, их же куча?</h3>
+            <div>прелесть в том, что не нужно их все запоминать!</div>
+            <div>Справочники по HTML</div>
+                <ul>
+                    <li class="fragment">
+                        <div><a href="http://www.w3schools.com/tags/default.asp">w3schools</a></div>
+                    </li>
+                    <li class="fragment">
+                        <div><a href="https://webref.ru/">webreference</a></div>
+                    </li>
+                </ul>
+        </section>
+
+        <section>
+            <h2>Вопросы?</h2>
+            <div style="font-size:1200%; height:100%; margin-top:40%" class="blue">?
+                <div class="clear"></div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="copyright">
+            HTML/CSS ~ IT-Step
+        </div>
+    </footer>
+</div>
+
+
+<script src="reveal/lib/js/head.min.js"></script>
+<script src="reveal/js/reveal.min.js"></script>
+
+<script>
+
+    // Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+            {
+                src: 'reveal/lib/js/classList.js', condition: function () {
+                return !document.body.classList;
+            }
+            },
+            {
+                src: 'reveal/plugin/markdown/showdown.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'reveal/plugin/markdown/markdown.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+            },
+            {
+                src: 'reveal/plugin/zoom-js/zoom.js', async: true, condition: function () {
+                return !!document.body.classList;
+            }
+            },
+            {
+                src: 'reveal/plugin/notes/notes.js', async: true, condition: function () {
+                return !!document.body.classList;
+            }
+            }
+        ]
+    });
+
+</script>
+
+</body>
+</html>
