@@ -5,6 +5,7 @@ https://github.com/theJollySin/python_for_scientists/tree/master/classes
 
 django-tdd: http://slides.com/janusnicon/django-tdd
 intro django: http://slides.com/jingchuanchen/a-brief-introduction-to-django
+http://lectures.webcourse.niksula.hut.fi
 
 html basic: http://slides.com/alexcss/html-basics
 form: http://slides.com/alexcss/forms
@@ -12,3 +13,5 @@ css: http://slides.com/alexcss/css-intro
 js: http://slides.com/alexcss/javascript-basics
 
 git: http://slides.com/alexcss/git-and-github
+
+
