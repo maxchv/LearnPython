@@ -2,12 +2,12 @@
 Домшанее задание 21
 ===================
 
-Материалы занятия:  https://github.com/maxchv/LearnPython/tree/master/week21
+Материалы занятия:  https://github.com/maxchv/LearnPython/tree/master/week11
 
-Слайды:	            https://github.com/maxchv/LearnPython/tree/master/week21/intro_django.pptx
+Слайды:	            https://github.com/maxchv/LearnPython/tree/master/week11/intro_django.pptx
 
-Примеры на занятии: https://github.com/maxchv/LearnPython/tree/master/week21/examples/startweb
-					https://github.com/maxchv/LearnPython/tree/master/week21/examples/website
+Примеры на занятии: https://github.com/maxchv/LearnPython/tree/master/week11/examples/startweb
+					https://github.com/maxchv/LearnPython/tree/master/week11/examples/website
 
 Домашнее задание:  
 
