@@ -1,0 +1,23 @@
+{% extends "blog/base.html" %}
+{% block header %}
+    <h1>Main page</h1>
+{% endblock %}
+{% block content %}
+{#    <!-- HTML comment -->#}
+    {# server comment #}
+{#    <p>Hello to my Blog</p>#}
+{#    <p>Now is {% now "d/m/Y H:i:s" %}</p>#}
+{#    <p>{{ var }}</p>#}
+{#    <p>Date: {{ date }}</p>#}
+{#    <ul>#}
+{#    {% for item in list_data %}#}
+{#        <li>{{ item }}</li>#}
+{#    {% endfor %}#}
+{#    </ul>#}
+    {% load staticfiles %}
+    <img src="{% static "blog/img/earth.jpg" %}" alt="earth" />
+    <p><a href="form">Добавить новый пост</a></p>
+{% endblock %}
+{% block footer %}
+    <p>&copy; Copyright: Shaptala</p>
+{% endblock %}
