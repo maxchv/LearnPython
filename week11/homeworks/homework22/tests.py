@@ -108,10 +108,55 @@ class TestBlog(TestCase):
         index = resolve("/blog/post/")
         self.assertEqual(index.func, views.post)
 
-    def test_static_links(self):
+    def test_index_static_links(self):
         request = HttpRequest()
         response = views.index(request)
-        self.assertFalse(re.match(r"^<!doctype\s+html>",
-                                  response.content.decode("utf-8"),
+        content = response.content.decode("utf-8")
+        self.if_present_static_links(content)
+
+    def test_post_static_links(self):
+        request = HttpRequest()
+        response = views.post(request)
+        content = response.content.decode("utf-8")
+        self.if_present_static_links(content)
+
+    def test_index_content(self):
+        request = HttpRequest()
+        response = views.index(request)
+        content = response.content.decode("utf-8")
+        pattern = r'<h1\s+class\s*=\s*\"page-header\">\s*Page\s+Heading\s+<small>\s*Secondary\s+Text\s*</small>\s*</h1>'
+        self.assertFalse(re.search(pattern,
+                                  content,
                                   re.IGNORECASE) is None)
+
+    def test_post_comment(self):
+        request = HttpRequest()
+        response = views.post(request)
+        content = response.content.decode("utf-8")
+        pattern = r'<h4>\s*Leave\s+a\s+Comment:\s*</h4>'
+        self.assertFalse(re.search(pattern,
+                                  content,
+                                  re.IGNORECASE) is None)
+
+
+
+    def if_present_static_links(self, content):
+        self.assertFalse(re.match(r"<!doctype\s+html>",
+                                  content,
+                                  re.IGNORECASE) is None)
+
+        self.assertFalse(re.search(r'<link\s+href="/static/blog/css/bootstrap\.min\.css"\s+rel="stylesheet">',
+                                  content,
+                                  re.IGNORECASE) is None)
+
+        self.assertFalse(re.search(r'<link\s+href="/static/blog/css/blog-\w+\.css"\s+rel="stylesheet">',
+                                   content,
+                                   re.IGNORECASE) is None)
+
+        self.assertFalse(re.search(r'<script\s+src="/static/blog/js/jquery\.js">\s*</script>',
+                                   content,
+                                   re.IGNORECASE) is None)
+
+
+
 
