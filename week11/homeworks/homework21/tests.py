@@ -2,6 +2,7 @@ from django.core.urlresolvers import resolve
 from django.test import TestCase
 from .views import index, about
 from django.http import HttpRequest
+import re
 
 class HomePageTest(TestCase):
     def test_index_route(self):
@@ -21,9 +22,10 @@ class HomePageTest(TestCase):
         """        
         request = HttpRequest()
         response = index(request)
-        self.assertTrue(response.content.startswith(b'<!doctype html>'))
-        self.assertIn(bytes('<title>Учим django</title>', "utf-8"), response.content)
-        self.assertTrue(response.content.endswith(b'</html>'))
+        content = response.content.decode("utf-8")
+        self.assertFalse(re.match(r'<!doctype\s+html>', content, re.I) is None)
+        self.assertFalse(re.search(r'<title>[^<]+</title>', content, re.I) is None)
+        self.assertFalse(re.search(r'<html>.+?</html>', content, re.I | re.DOTALL) is None)
 
     def test_h1_in_index(self):
         """
@@ -34,7 +36,8 @@ class HomePageTest(TestCase):
         """        
         request = HttpRequest()
         response = index(request)
-        self.assertIn(bytes('<h1>Добро пожаловать</h1>', "utf-8"), response.content)
+        content = response.content.decode("utf-8")
+        self.assertFalse(re.search(r'<h1>[^<]+</h1>', content, re.I) is None)
         
     def test_link_index_to_about(self):
         """
@@ -42,7 +45,9 @@ class HomePageTest(TestCase):
         """
         request = HttpRequest()
         response = index(request)
-        self.assertIn(bytes('<a href="about">О нас</a>', "utf-8"), response.content)
+        content = response.content.decode("utf-8")
+        self.assertFalse(re.search(r'<a\s+href=["\']/?about["\']\s*>[^<]+</a>', content, re.I) is None)
+
 
 class AboutPageTest(TestCase):
     def test_about(self):
@@ -52,7 +57,10 @@ class AboutPageTest(TestCase):
         """
         request = HttpRequest()
         response = about(request)
-        self.assertIn(bytes("<title>О нас</title>","utf-8"), response.content)
+        content = response.content.decode("utf-8")
+        self.assertFalse(re.match(r'<!doctype\s+html>', content, re.I) is None)
+        self.assertFalse(re.search(r'<title>[^<]+</title>', content, re.I) is None)
+        self.assertFalse(re.search(r'<html.*?>.+?</html>', content, re.I | re.DOTALL) is None)
 
     def test_about_route(self):
         """
@@ -67,4 +75,6 @@ class AboutPageTest(TestCase):
         """
         request = HttpRequest()
         response = about(request)
-        self.assertIn(bytes('<a href="/hello">На главную</a>', "utf-8"), response.content)
+        content = response.content.decode("utf-8")
+        self.assertFalse(re.search(r'<a\s+href=["\']/hello/?["\']>[^<]+</a>', content, re.I) is None)
+
