@@ -1,8 +1,10 @@
 from django.test import TestCase
 from django.core.urlresolvers import resolve
+from django.http import HttpRequest
 from website import settings
 import os.path
 from blog import views
+import re
 
 
 class TestProject(TestCase):
@@ -105,3 +107,11 @@ class TestBlog(TestCase):
     def test_index_route(self):
         index = resolve("/blog/post/")
         self.assertEqual(index.func, views.post)
+
+    def test_static_links(self):
+        request = HttpRequest()
+        response = views.index(request)
+        self.assertFalse(re.match(r"^<!doctype\s+html>",
+                                  response.content.decode("utf-8"),
+                                  re.IGNORECASE) is None)
+
