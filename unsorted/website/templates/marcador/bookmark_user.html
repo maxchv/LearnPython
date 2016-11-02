@@ -1,0 +1,11 @@
+{% extends 'marcador/bookmark_list.html' %}
+
+{% block title %}
+    {{ owner.username }}
+{% endblock %}
+
+{% block heading %}
+    <h2>{{ owner.username }}'s bookmarks
+        <small>{{ bookmarks.count }} bookmarks in total</small>
+    </h2>
+{% endblock %}
