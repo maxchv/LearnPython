@@ -38,7 +38,7 @@ def task01():
 
 def task02():
     """
-    Найти всех продюсеров (поле director) всех фильмов.
+    Найти всех режисеров (поле director) всех фильмов.
     Вернуть список строк продюсеров из таблицы movies
 
     >>> task02()
@@ -63,10 +63,44 @@ def task10():
 def task11():
     """
     Найти все фильмы выпущенные в период между 2000 и 2004 годом (включительно)
-    Вернуть список списков фильмом
+    Вернуть список со списом полей всех фильмов соответствующих заданию
 
     >>> task11()
     [[4, 'Monsters, Inc.', 'Pete Docter', 2001, 92], [5, 'Finding Nemo', 'Andrew Stanton', 2003, 107], [6, 'The Incredibles', 'Brad Bird', 2004, 116]]
     """
 
     return []
+
+
+def task20():
+    """
+    Найти все фильмы в которых режисером был John Lasseter
+    Вернуть список со списом полей всех фильмов соответствующих заданию
+
+    >>> task20()
+    [[1, 'Toy Story', 'John Lasseter', 1995, 81], [2, "A Bug's Life", 'John Lasseter', 1998, 95], [3, 'Toy Story 2', 'John Lasseter', 1999, 93], [7, 'Cars', 'John Lasseter', 2006, 117]]
+    """
+    conn = sqlite3.connect('db.sqlite3')
+    c = conn.cursor()
+    c.execute("select * from movies WHERE director like 'John Lasseter'")
+    movies = [list(row) for row in c.fetchall()]
+    c.close()
+    conn.close()
+    return movies
+
+
+def task21():
+    """
+    Найти все фильмы компании Pixar отсортированные в алфавитном порядке
+    Вернуть список со списом полей всех фильмов соответствующих заданию
+
+    >>> task21()
+    [[1, 'Toy Story', 'John Lasseter', 1995, 81], [2, "A Bug's Life", 'John Lasseter', 1998, 95], [3, 'Toy Story 2', 'John Lasseter', 1999, 93], [7, 'Cars', 'John Lasseter', 2006, 117]]
+    """
+    conn = sqlite3.connect('db.sqlite3')
+    c = conn.cursor()
+    c.execute("select * from movies WHERE director like 'P'")
+    movies = [list(row) for row in c.fetchall()]
+    c.close()
+    conn.close()
+    return movies
