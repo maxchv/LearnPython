@@ -1,7 +1,7 @@
 from django.test import TestCase
 from django.core.urlresolvers import resolve
 from django.http import HttpRequest
-from website import settings
+from django.conf import settings
 import os.path
 from blog import views
 import re
