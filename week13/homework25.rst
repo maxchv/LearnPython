@@ -1,14 +1,14 @@
 ===================
-Домшанее задание 
+Домшанее задание 25
 ===================
 
-Материалы занятия:  https://github.com/maxchv/LearnPython/tree/master/week0
+Материалы занятия:  https://github.com/maxchv/LearnPython/tree/master/week13
 
-Слайды:	            https://github.com/maxchv/LearnPython/tree/master/week0
+Слайды:	            https://github.com/maxchv/LearnPython/tree/master/week13/db_queries.pptx
 
-Домашнее задание:   
+Домашнее задание:   https://github.com/maxchv/LearnPython/tree/master/week13/homeworks/homework25.txt
 
-Примеры на занятии: https://github.com/maxchv/LearnPython/tree/master/week0
+Примеры на занятии: https://github.com/maxchv/LearnPython/tree/master/week13/examples/website
 		
 
-Видео: 	
+Видео: 				https://youtu.be/jWDopNksK9o
