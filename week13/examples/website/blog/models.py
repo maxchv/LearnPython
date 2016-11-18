@@ -13,20 +13,12 @@ class Category(models.Model):
         verbose_name_plural = "Категории"
 
 
-class Tag(models.Model):
-    name = models.CharField(max_length=30, verbose_name="name", unique=True)
-
-    def __str__(self):
-        return self.name
-
-
 class Post(models.Model):
     title = models.CharField(max_length=30, verbose_name="Заголовок")
     content = models.TextField(verbose_name="Содержимое")
     published_date = models.DateTimeField(auto_created=True, verbose_name="Дата публикации")
     category = models.ForeignKey(Category, verbose_name="Категория")
     user = models.ForeignKey(User, verbose_name="Автор")
-    tags = models.ManyToManyField(Tag)
     image = models.URLField(default="http://placehold.it/900x300")
 
     def __str__(self):
@@ -35,5 +27,4 @@ class Post(models.Model):
     class Meta:
         verbose_name = "Сообщение"
         verbose_name_plural = "Сообщения"
-        ordering = ("-published_date",)
 

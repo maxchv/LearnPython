@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "blog/base.html" %}
 {% block content %}
     <h1 class="page-header">
         Page Heading
@@ -7,26 +7,26 @@
 
     <!-- Blog Post -->
     {% for post in posts %}
-    <h2>
-        <a href="{% url "post" pk=post.pk %}">{{ post.title }}</a>
-    </h2>
-    <p class="lead">
-        by <a href="/blog">{{ post.user }}</a>
-    </p>
-    <p><span class="glyphicon glyphicon-time"></span>
-        Posted on {{ post.published_date }}
-    </p>
-    <hr>
-    <img class="img-responsive" width="900" height="300" src="{{ post.image }}" alt="">
-    <hr>
-    <p>
-        {{ post.content|truncatewords:20 }}
-    </p>
+        <h2>
+            <a href="{% url "post" %}">{{ post.title }}</a>
+        </h2>
+        <p class="lead">
+            by <a href="#">{{ post.user }}</a>
+        </p>
+        <p><span class="glyphicon glyphicon-time"></span>
+            Posted on {{ post.published_date }}
+        </p>
+        <hr>
+        <img class="img-responsive" width="900" height="300" src="{{ post.image }}" alt="">
+        <hr>
+        <p>
+            {{ post.content|truncatewords:20 }}
+        </p>
 
-        <a class="btn btn-primary" href="{% url "post" pk=post.pk %}">
+        <a class="btn btn-primary" href="{% url "post" id=post.pk %}">
             Read More <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
-    <hr>
+        <hr>
     {% endfor %}
 
 
