@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from .models import Post, Category
 from .forms import PostForm
 from django.utils.timezone import now
-
+from django.contrib.auth.decorators import login_required
 
 def get_categories():
     all_categories = Category.objects.all()
@@ -50,7 +50,7 @@ def search(request):
     context.update(get_categories())
     return render(request, "blog/index.html", context)
 
-
+@login_required
 def create(request):
     if request.method == 'POST':
         form = PostForm(request.POST)

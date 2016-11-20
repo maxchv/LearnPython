@@ -127,3 +127,7 @@ STATICFILES_DIRS = [
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
+
+LOGIN_REDIRECT_URL = "index" #редирект при успешном залогинивании
+LOGIN_URL = "blog_login" #редирект, если ресурс закрыт от залогиниваниия
+LOGOUT_URL = "blog_logout"
