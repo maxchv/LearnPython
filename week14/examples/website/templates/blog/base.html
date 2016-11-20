@@ -46,9 +46,11 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
+                    {% if user.is_authenticated %}
                     <li>
                         <a href="{% url "create" %}">Create post</a>
                     </li>
+                    {% endif %}
                     <li>
                         <a href="#">Services</a>
                     </li>
@@ -56,6 +58,7 @@
                         <a href="#">Contact</a>
                     </li>
                 </ul>
+                {% include "blog/toggle_login.html" %}
             </div>
             <!-- /.navbar-collapse -->
         </div>

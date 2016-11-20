@@ -59,6 +59,7 @@ def create(request):
         if form.is_valid():
             p = form.save(commit=False)
             p.published_date = now()
+            p.user = request.user
             p.save()
 
             return index(request)

@@ -21,5 +21,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^', include("blog.urls")),
     url(r'^login/$', login, name="blog_login"),
-    url(r'^logout/$', logout, {"next_page": "index"}, name="logout"),
+    url(r'^logout/$', logout, {"next_page": "index"}, name="blog_logout"),
 ]
