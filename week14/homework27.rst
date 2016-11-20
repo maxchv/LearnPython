@@ -1,14 +1,14 @@
 ===================
-Домшанее задание 
+Домшанее задание 27
 ===================
 
-Материалы занятия:  https://github.com/maxchv/LearnPython/tree/master/week0
+Материалы занятия:  https://github.com/maxchv/LearnPython/tree/master/week14
 
-Слайды:	            https://github.com/maxchv/LearnPython/tree/master/week0
+Слайды:	            https://github.com/maxchv/LearnPython/tree/master/week14/auth.pptx
 
-Домашнее задание:   
+Домашнее задание:   https://github.com/maxchv/LearnPython/tree/master/week14/homeworks/homework27.txt
 
-Примеры на занятии: https://github.com/maxchv/LearnPython/tree/master/week0
+Примеры на занятии: https://github.com/maxchv/LearnPython/tree/master/week14/examples/website
 		
 
-Видео: 	
+Видео: 				https://youtu.be/RtvtC7R4Lbk
