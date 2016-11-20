@@ -3,12 +3,13 @@ from .models import Post, Category
 from .forms import PostForm
 from django.utils.timezone import now
 
+
 def get_categories():
-    all = Category.objects.all()
-    count = all.count() # 7
+    all_categories = Category.objects.all()
+    count = all_categories.count() # 7
     half = count // 2 + count % 2
-    first_half = all[:half]
-    second_half = all[half:]
+    first_half = all_categories[:half]
+    second_half = all_categories[half:]
     return {"cat1": first_half, "cat2": second_half}
 
 
@@ -20,8 +21,8 @@ def index(request):
 
 
 def post(request, id=None):
-    post = get_object_or_404(Post, pk=id) #Post.objects.get(pk=id)
-    context = {"post": post}
+    p = get_object_or_404(Post, pk=id) #Post.objects.get(pk=id)
+    context = {"post": p}
     context.update(get_categories())
     return render(request, "blog/post.html", context)
 
@@ -54,9 +55,9 @@ def create(request):
     if request.method == 'POST':
         form = PostForm(request.POST)
         if form.is_valid():
-            post = form.save(commit=False)
-            post.published_date = now()
-            post.save()
+            p = form.save(commit=False)
+            p.published_date = now()
+            p.save()
 
             return index(request)
 
