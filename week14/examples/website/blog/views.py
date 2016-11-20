@@ -3,7 +3,6 @@ from .models import Post, Category
 from .forms import PostForm
 from django.utils.timezone import now
 
-
 def get_categories():
     all = Category.objects.all()
     count = all.count() # 7
