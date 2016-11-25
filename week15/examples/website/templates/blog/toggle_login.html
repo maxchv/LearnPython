@@ -4,7 +4,12 @@
     </div>
     <ul class="nav navbar-nav navbar-right">
         <li>
-            <a href="#">Hello {{ user }}</a>
+            {% if user.is_superuser %}
+                <a href="{% url "admin:index" %}">Hello {{ user }}</a>
+            {% else %}
+                <a href="#">Hello {{ user }}</a>
+            {% endif %}
+
         </li>
     </ul>
 {% else %}

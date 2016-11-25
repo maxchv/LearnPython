@@ -51,6 +51,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
 ]
 
 ROOT_URLCONF = 'website.urls'
@@ -136,3 +137,16 @@ LOGOUT_URL = "blog_logout"
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "uploads")
 MEDIA_URL = "/media/"
+
+LOCALE_PATHS = (
+    os.path.join(BASE_DIR, 'translations'),
+)
+
+# язык сайта по умолчанию, если не удалось определить язык другими способами
+LANGUAGE_CODE = 'ru'
+
+# список доступных языков
+LANGUAGES = (
+    ('ru', 'Russian'),
+    ('uk', 'Ukrainian'),
+)

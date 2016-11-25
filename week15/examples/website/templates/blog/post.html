@@ -1,67 +1,74 @@
-{% extends "blog/base.html" %}
+{% extends "base.html" %}
+{% load i18n %}
 {% block content %}
+    <div class="row">
 
-    <!-- Blog Post -->
+        <!-- Blog Entries Column -->
+        <div class="col-md-8">
+            <!-- Blog Post -->
 
-    <!-- Title -->
-    <h1>Blog Post Title</h1>
+            <!-- Title -->
+            <h1>{{ post.title }}</h1>
 
-    <!-- Author -->
-    <p class="lead">
-        by <a href="{% url "blog" %}">{{ post.user }}</a>
-    </p>
+            <!-- Author -->
+            <p class="lead">
+                {% trans "by" %} <a href="{% url "blog" %}">{{ post.user }}</a>
+            </p>
 
-    <hr>
+            <hr>
 
-    <!-- Date/Time -->
-    <p><span class="glyphicon glyphicon-time"></span>
-        Posted on {{ post.published_date }}</p>
+            <!-- Date/Time -->
+            <p><span class="glyphicon glyphicon-time"></span>
+                {% trans "Posted on" %} {{ post.published_date }}</p>
 
-    <hr>
+            <hr>
 
-    <!-- Preview Image -->
-    <img class="img-responsive" src="{{ post.image }}" alt="">
+            <!-- Preview Image -->
+            <img class="img-responsive" src="{{ post.image }}" alt="">
 
-    <hr>
+            <hr>
 
-    <!-- Post Content -->
-    <p class="lead">{{ post.title }}</p>
-    <p>{{ post.content }}</p>
+            <!-- Post Content -->
+            <p class="lead">{{ post.title }}</p>
+            <p>{{ post.content }}</p>
 
-    <hr>
+            <hr>
 
-    <!-- Blog Comments -->
+            <!-- Blog Comments -->
 
-    <!-- Comments Form -->
-    <div class="well">
-        <h4>Leave a Comment:</h4>
-        <form role="form">
-            <div class="form-group">
-                <textarea class="form-control" rows="3"></textarea>
+            <!-- Comments Form -->
+            <div class="well">
+                <h4>{% trans "Leave a Comment:" %}</h4>
+                <form role="form">
+                    <div class="form-group">
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">{% trans "Submit" %}</button>
+                </form>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-    </div>
 
-    <hr>
+            <hr>
 
-    <!-- Posted Comments -->
+            <!-- Posted Comments -->
 
-    <!-- Comment -->
-    <div class="media">
-        <a class="pull-left" href="#">
-            <img class="media-object" src="http://placehold.it/64x64" alt="">
-        </a>
-        <div class="media-body">
-            <h4 class="media-heading">Start Bootstrap
-                <small>August 25, 2014 at 9:30 PM</small>
-            </h4>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras
-            purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
-            fringilla. Donec lacinia congue felis in faucibus.
+            <!-- Comment -->
+            <div class="media">
+                <a class="pull-left" href="#">
+                    <img class="media-object" src="http://placehold.it/64x64" alt="">
+                </a>
+                <div class="media-body">
+                    <h4 class="media-heading">Start Bootstrap
+                        <small>August 25, 2014 at 9:30 PM</small>
+                    </h4>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.
+                    Cras
+                    purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                    vulputate
+                    fringilla. Donec lacinia congue felis in faucibus.
+                </div>
+            </div>
         </div>
+        {% include "include/sidebar.html" %}
     </div>
-
-
 
 {% endblock %}

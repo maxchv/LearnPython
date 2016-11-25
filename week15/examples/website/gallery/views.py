@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Photo
 from .forms import PhotoForm
 
@@ -13,7 +13,8 @@ def upload(request):
         form = PhotoForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
-            return gallery(request)
+            #return gallery(request)
+            return redirect("gallery")
     form = PhotoForm()
     return render(request, "gallery/upload.html", {"form": form})
 

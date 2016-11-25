@@ -1,11 +1,15 @@
-{% extends "blog/base.html" %}
+{% extends "base.html" %}
 {% load crispy_forms_tags %}
 {% block content %}
-
-    <form action="{% url "create" %}" method="post">
-        {% csrf_token %}
-        {{ form|crispy }}
-        <input type="submit" value="Save" class="btn btn-default"/>
-    </form>
+    <div class="row">
+        <!-- Blog Entries Column -->
+        <div class="col-md-8">
+            <form action="{% url "create" %}" method="post">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <input type="submit" value="Save" class="btn btn-default"/>
+            </form>
+        </div>
+    </div>
 
 {% endblock %}
