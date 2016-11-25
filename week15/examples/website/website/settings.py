@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'crispy_forms',
     'blog',
+    'gallery',
+    'easy_thumbnails',
 ]
 
 MIDDLEWARE = [
@@ -132,11 +134,5 @@ LOGIN_REDIRECT_URL = "index"
 LOGIN_URL = "blog_login"
 LOGOUT_URL = "blog_logout"
 
-# Configure email
-# http://djbook.ru/rel1.9/topics/email.html
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_USE_TLS = True
-EMAIL_HOST='smtp.gmail.com'
-EMAIL_PORT=587
-EMAIL_HOST_USER = 'shaptala@itstep.org'
-EMAIL_HOST_PASSWORD = 'xxx'
+MEDIA_ROOT = os.path.join(BASE_DIR, "uploads")
+MEDIA_URL = "/media/"
