@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from .models import Post, Category
 from .forms import PostForm
 from django.utils.timezone import now
@@ -29,8 +29,6 @@ def post(request, id=None):
 
 
 def category(request, id=None):
-    #c = gbjects.filter(categet_object_or_404(Category, pk=id)
-    #posts = Post.oory=c).order_by("-published_date")
     posts = Post.objects.filter(category__pk=id).order_by("-published_date")
     context = {"posts": posts}
     context.update(get_categories())
@@ -55,14 +53,17 @@ def search(request):
 @login_required
 def create(request):
     if request.method == 'POST':
-        form = PostForm(request.POST)
+        form = PostForm(request.POST, request.FILES)
+        print(form)
         if form.is_valid():
             p = form.save(commit=False)
             p.published_date = now()
             p.user = request.user
             p.save()
-
-            return index(request)
+            print("saved", p)
+            return redirect("index")
+        else:
+            return render(request, "blog/create.html", {"form": form})
 
     form = PostForm()
     return render(request, "blog/create.html", {"form": form})

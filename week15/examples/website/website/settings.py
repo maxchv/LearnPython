@@ -109,7 +109,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.10/topics/i18n/
 
-LANGUAGE_CODE = 'uk-ua'
+LANGUAGE_CODE = 'ru-RU'
 
 TIME_ZONE = 'UTC'
 
@@ -118,7 +118,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
@@ -138,15 +137,14 @@ LOGOUT_URL = "blog_logout"
 MEDIA_ROOT = os.path.join(BASE_DIR, "uploads")
 MEDIA_URL = "/media/"
 
-LOCALE_PATHS = (
-    os.path.join(BASE_DIR, 'translations'),
-)
+from django.utils.translation import ugettext_lazy as _
 
-# язык сайта по умолчанию, если не удалось определить язык другими способами
-LANGUAGE_CODE = 'ru'
-
-# список доступных языков
+LANGUAGE_CODE = 'id'
 LANGUAGES = (
-    ('ru', 'Russian'),
-    ('uk', 'Ukrainian'),
+    ('ru', _('Russia')),
+    ('en', _('English'))
+)
+DEFAULT_LANGUAGE = 1
+LOCALE_PATHS = (
+    os.path.join(BASE_DIR, 'locale'),
 )

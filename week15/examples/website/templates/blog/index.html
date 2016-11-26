@@ -12,7 +12,7 @@
             <!-- Blog Post -->
             {% for post in posts %}
                 <h2>
-                    <a href="{% url "post" %}">{{ post.title }}</a>
+                    <a href="{% url "post" id=post.pk %}">{{ post.title }}</a>
                 </h2>
                 <p class="lead">
                     {% trans "by" %} <a href="#">{{ post.user }}</a>
@@ -21,7 +21,7 @@
                     {% trans "Posted on" %} {{ post.published_date }}
                 </p>
                 <hr>
-                <img class="img-responsive" width="900" height="300" src="{{ post.image }}" alt="{{ post.title }}" />
+                <img class="img-responsive" width="900" height="300" src="{{ post.img.url }}" alt="{{ post.title }}" />
                 <hr>
                 <p>
                     {{ post.content|truncatewords:20 }}

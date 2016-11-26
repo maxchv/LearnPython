@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
-from django.utils.translation import ugettext as _
+from django.utils.translation import ugettext_lazy as _
 
 
 class Category(models.Model):
@@ -20,7 +20,7 @@ class Post(models.Model):
     published_date = models.DateTimeField(auto_created=True, verbose_name=_("Post date published"))
     category = models.ForeignKey(Category, verbose_name=_("Category"))
     user = models.ForeignKey(User, verbose_name=_("Author"))
-    image = models.URLField(default="http://placehold.it/900x300")
+    img = models.ImageField(upload_to="posts", verbose_name=_("Post Image"))
 
     def __str__(self):
         return self.title

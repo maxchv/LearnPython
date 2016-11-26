@@ -1,13 +1,14 @@
+{% load i18n %}
 {% if user.is_authenticated %}
     <div class="navbar-form navbar-right">
-        <a href="{% url "blog_logout" %}" class="btn btn-danger">Logout</a>
+        <a href="{% url "blog_logout" %}" class="btn btn-danger">{% trans "Logout" %}</a>
     </div>
     <ul class="nav navbar-nav navbar-right">
         <li>
             {% if user.is_superuser %}
-                <a href="{% url "admin:index" %}">Hello {{ user }}</a>
+                <a href="{% url "admin:index" %}">{% trans "Hello" %} {{ user }}</a>
             {% else %}
-                <a href="#">Hello {{ user }}</a>
+                <a href="#">{% trans "Hello" %} {{ user }}</a>
             {% endif %}
 
         </li>
@@ -21,7 +22,7 @@
         <div class="form-group">
             <input type="password" placeholder="Password" name="password" class="form-control">
         </div>
-        <button type="submit" class="btn btn-success">Sign in</button>
+        <button type="submit" class="btn btn-success">{% trans "Sign in" %}</button>
     </form>
 {% endif %}
 

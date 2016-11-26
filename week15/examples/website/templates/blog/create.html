@@ -4,7 +4,7 @@
     <div class="row">
         <!-- Blog Entries Column -->
         <div class="col-md-8">
-            <form action="{% url "create" %}" method="post">
+            <form action="{% url "create" %}" method="post" enctype="multipart/form-data">
                 {% csrf_token %}
                 {{ form|crispy }}
                 <input type="submit" value="Save" class="btn btn-default"/>
