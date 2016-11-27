@@ -21,7 +21,7 @@
                     {% trans "Posted on" %} {{ post.published_date }}
                 </p>
                 <hr>
-                <img class="img-responsive" width="900" height="300" src="{{ post.img.url }}" alt="{{ post.title }}" />
+                <img class="img-responsive" width="900" height="300" src="{{ post.img.url }}" alt="{{ post.title }}"/>
                 <hr>
                 <p>
                     {{ post.content|truncatewords:20 }}
@@ -35,15 +35,19 @@
 
             <!-- Pager -->
             <ul class="pager">
-                <li class="previous">
-                    <a href="#">&larr; {% trans "Older" %}</a>
-                </li>
-                <li class="next">
-                    <a href="#">{% trans "Newer" %} &rarr;</a>
-                </li>
+{#                {% if pages.has_previous  %}#}
+                    <li class="previous">
+                        <a href="?page={{ pages.previous_page_number }}">&larr; {% trans "Older" %}</a>
+                    </li>
+{#                {% endif %}#}
+{#                {% if pages.has_next %}#}
+                    <li class="next">
+                        <a href="?page={{ pages.page_next_number }}">{% trans "Newer" %} &rarr;</a>
+                    </li>
+{#                {% endif %}#}
             </ul>
         </div>
-    {% include "include/sidebar.html" %}
+        {% include "include/sidebar.html" %}
     </div>
 
 {% endblock %}

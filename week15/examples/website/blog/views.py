@@ -3,6 +3,7 @@ from .models import Post, Category
 from .forms import PostForm
 from django.utils.timezone import now
 from django.contrib.auth.decorators import login_required
+from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 
 
 def get_categories():
@@ -15,7 +16,16 @@ def get_categories():
 
 
 def index(request):
-    posts = Post.objects.all().order_by("-published_date")
+    all_posts = Post.objects.all().order_by("-published_date")
+    paginator = Paginator(all_posts, 3) # maximum posts on the page
+    page = request.GET.get('page')
+    try:
+        posts = paginator.page(page)
+    except PageNotAnInteger:
+        posts = paginator.page(1)
+    except EmptyPage:
+        posts = paginator.page(paginator.num_pages)
+
     context = {"posts": posts}
     context.update(get_categories())
     return render(request, "blog/index.html", context)
