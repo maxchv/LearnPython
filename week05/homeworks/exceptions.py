@@ -98,6 +98,9 @@ def toUpperList(*args):
     в верхнем регистре
 
     Обязательно использовать генератор списков (List comprehensions)
+	
+	Генерировать исключение ValueError с содержимым 'List must contains only string'
+	если в списке содержаться не строковые элементы
 
     Пример:
 
@@ -107,7 +110,12 @@ def toUpperList(*args):
     []
     >>> toUpperList('PYTHON', 'DJANGO', 'ITSTEP')
     ['PYTHON', 'DJANGO', 'ITSTEP']
-    
+	>>> toUpperList('PYTHON', 'DJANGO', 'ITSTEP', 2017)
+    ['PYTHON', 'DJANGO', 'ITSTEP']
+    Traceback (most recent call last):
+    ...
+    ValueError: List must contains only string
+	
     """
     pass
 
@@ -119,9 +127,8 @@ def prodKeyValue(d):
     Реализуйте функцию prodKeyValue, которая принимает словарь с
     числовыми ключами и значениями
 
-    Вернуть список, в котором элементы - это произведение ключа на значение
-    исходного словаря
-
+    Вернуть список, в котором элементы - это произведение ключа и значение
+    
     Обязательно использовать геератор списков (List comprehensions)
 
     Пример:
