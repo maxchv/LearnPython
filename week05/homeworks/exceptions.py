@@ -45,7 +45,7 @@ class FakeInput:
     
 ## [Конец вспомогательного класса]
 
-def readNumber(start, end, input_function = input):
+def readNumber(start, end, input = input):
     """
     Задание 2
     ---------
@@ -111,7 +111,6 @@ def toUpperList(*args):
     >>> toUpperList('PYTHON', 'DJANGO', 'ITSTEP')
     ['PYTHON', 'DJANGO', 'ITSTEP']
 	>>> toUpperList('PYTHON', 'DJANGO', 'ITSTEP', 2017)
-    ['PYTHON', 'DJANGO', 'ITSTEP']
     Traceback (most recent call last):
     ...
     ValueError: List must contains only string
