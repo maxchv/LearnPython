@@ -123,7 +123,7 @@ def parse_tag(html):
     >>> parse_tag("<h1>Заголовок первого уровня</h1>")
     ('h1', 'Заголовок первого уровня')
     >>> parse_tag("<a href='url' />")
-    ('a')
+    ('a',)
     >>> parse_tag("only text")
     ()
     """
