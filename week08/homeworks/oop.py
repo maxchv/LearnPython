@@ -54,7 +54,7 @@ class Address:
     __state, __country, __zipcode.
 
     Необходимо:
-        добавить конструктор с параметрами
+        добавить конструктор с необходимыми параметрами
 
         добавить свойства street, state, country и zipcode (только геттеры)
 
@@ -73,7 +73,7 @@ class Address:
     >>> address.country
     'Ukraine'
     >>> address.zipcode
-    '49000'
+    49000
     >>> address.street = 'Lazarana'
     Traceback (most recent call last):
     ...
