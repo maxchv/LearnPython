@@ -64,7 +64,7 @@ def count_a(text):
     ("car") и она не является первой или последней буквой слова.
 
     >>> count_a('Cras ultricies ligula sed magna dictum porta.')
-    7
+    2
     """
     pass
 
