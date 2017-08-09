@@ -402,3 +402,414 @@ b) do... while
 c) if 
 d) switch 
 e) for 
+
+Функции и модули
+================
+
+Задание 7
+---------
+
+Определены функции
+
+def a(x):
+    return x + 1
+
+def b(x):
+    return x + 1.0
+  
+def c(x, y):
+    return x + y
+  
+def d(x, y):
+    return x > y
+  
+def e(x, y, z):
+    return x >= y and x <= z
+    
+def f(x, y):
+  x + y - 2
+  
+Для каждой вызванной функции укажите возвращаемое значение и тип. 
+Если нет возвращаемого значения , указываем None
+  
+>>> a(1)
+  
+>>> a(-3.5)
+  
+>>> a(a(a(6)))
+  
+>>> c(a(1), b(1))
+  
+>>> c('monty', 'python')
+  
+>>> d('monty', 'python')
+  
+>>> e(a(3), b(2), c(1, 3))
+  
+>>> f(4, 8)
+  
+  
+Задание 8
+---------
+
+Определена функция:
+
+def show_full_name(name, surname, patronymic = None):
+    return 'Fullname: {} {} {}'.format(name, patronymic, surname)
+
+
+Для каждого фрагмента кода укажите возвращаемое значение:
+
+1. 	record = {'name': 'anna', 'patronymic': 'petrovna', 'surname': 'polosatova'}	
+	show_full_name(**record, 'ivanovna')
+	
+	a) 'Fullname: anna ivanovna polosatova' 
+	b) 'Fullname: anna petrovna polosatova' 
+	c) SyntaxError 
+	d) 'Fullname: anna petrovna ivanovna polosatova' 
+	e) 'Fullname: anna ivanovna petrovna polosatova' 
+	
+2. 	record = {'name': 'anna', 'patronymic': 'petrovna', 'surname': 'polosatova'}
+	show_full_name('ivanovna', **record)
+	
+	a) 'Fullname: anna ivanovna polosatova' 
+	b) 'Fullname: anna petrovna polosatova' 
+	c) TypeError 
+	d) 'Fullname: anna petrovna ivanovna polosatova' 
+	e) 'Fullname: anna ivanovna petrovna polosatova' 
+
+3. 	record = {'surname': 'ivanko', 'name': 'kolya', 'age': 15}        
+	show_full_name(**record)
+
+	a) TypeError 
+	b) 'Fullname: kolya ivanko' 
+	c) 'Fullname: kolya None ivanko' 
+	
+4. 	record1 = {'surname': 'ivanko', 'name': 'kolya'}  
+	record2 = ['petrovich']        
+	show_full_name(**record1, *record2)
+	
+	a) SyntaxError 
+	b) 'Fullname: kolya ivanko' 
+	c) 'Fullname: kolya None ivanko' 
+	d) 'Fullname: kolya petrovich ivanko' 
+	
+5. 	record = {'surname': 'ivanko', 'name': 'kolya'} 
+	show_full_name(**record)
+	
+	a) TypeError 
+	b) 'Fullname: kolya ivanko' 
+	c) 'Fullname: kolya None ivanko' 
+	d) 'Fullname: kolya petrovich ivanko' 
+	
+
+Задание 9
+---------
+
+Определены функции
+
+def a(x, y, z):
+    if x:
+        return y
+    else:
+        return z
+
+def b(q, r):
+    return a(q>r, q, r)
+
+
+Для каждой вызванной функции укажите возвращаемое значение и тип.
+
+>>> a(False, 2, 3)
+
+>>> b(3, 2)
+
+>>> a(3>2, 'a', 'b')
+
+>>> b('a', 'b')
+
+Задание 10
+----------
+
+Для каждого фрагмента кода укажите возвращаемое значение и тип данных. Если генерируется ошибка - в выпадающем списке выберите "ошибка", в поле для ввода введите текст "ошибка" (без кавычек)
+
+a = 10
+            
+def f(x):
+    return x + a
+            
+a = 3
+            
+>>> f(1)
+
+x = 12
+        
+def g(x):
+    x = x + 1
+    def h(y):
+        return x + y
+    return h(6)
+        
+>>> g(x)
+
+def foo(x):
+    def bar(x):
+        return x + 1.0
+    return bar(x * 2)
+        
+>>> foo(3)
+
+def foo (x):
+    def bar (z):
+        return z + x
+    return bar(3)
+
+>>> foo(2)
+
+def foo (numbers_list = []):
+    if numbers_list:
+        numbers_list.append(1)
+    else:
+        numbers_list.append(2)
+    return numbers_list
+
+foo()
+>>> foo() # Примечание: в ответе указывать результат второго вызова функции
+
+numbers_list = [3, 6, 1, 8]
+        
+def foo (ls):
+    return ls.sort()
+
+>>> foo(numbers_list)
+
+
+Задание 11
+----------
+
+Какое значение вернет вызов следующей функции:
+
+def outer_function(a):
+    a += 1
+    def inner_function(b):
+        a += b
+        return a
+    return inner_function(1)  
+    
+outer_function(1)
+
+	a) 1
+	b) 2
+	c) 3
+	d) UnboundLocalError 
+	
+Задание 12
+----------
+
+Какое значениие вернет вызов следующей функции:
+
+a = 1
+
+def foo(b):
+    global a
+    a += b
+    return a
+    
+foo(1)
+
+	a) 1
+	b) 2
+	c) UnboundLocalError 
+	
+Задание 13
+----------
+
+Выполнение какого выражения возвращает список четных чисел последовательности чисел от 1 до 20?
+
+	a) [x for x in range(1, 21) if x % 2]
+	b) [x for x in range(1, 21) if not x % 3]
+	c) [x for x in range(1, 21) if not x % 2]
+	d) [x for x in range(1, 20) if not x % 2]
+	e) (x for x in range(1, 20) if not x % 2)
+	
+Задание 14
+----------
+
+Какие варианты кода возвращают список целых чисел, взятых по квадратному корню элементов из исходного списка?
+
+Объявленные функции и переменные:
+
+from math import pow
+
+def get_numbers(x):
+    lst = []
+    for i in x:
+        lst.append(int(pow(i, 1/2.0)))
+    return lst
+    
+my_list = [81, 9, 64]
+
+	a) list(map(lambda x: int(pow(x, 1/2.0)), my_list))
+	b) list(map(get_numbers, my_list))
+	c) get_numbers(my_list)
+	
+Задание 15
+----------
+
+Какие выражения возвращают список целых чисел, кратных 3, из исходного списка my_list = [81, 9, 64]?
+
+	a) list(filter(lambda x: not x % 3, my_list))
+	b) list(map(lambda x: not x % 3, my_list))
+	c) [i for i in my_list if not i % 3]
+	
+
+
+Библиотеки и пакетный менеджер
+==============================
+
+Задание 16
+----------
+
+Какие необходимо предпринять действия, чтобы стали доступны для импорта стандартные модули питона (stdlib)?
+	
+	a) Установить python-stdlibs (apt-get install python-stdlib) 
+	b) Добавить специальный путь в sys.path (sys.path.append(“/usr/bin/python/stdlib”)) 
+	c) Ничего не нужно делать, стандартные модули доступны сразу после установки python 
+	d) Выполнить from __future__ import stdlib 
+	
+Интерфейс к какой базе данных содержиться в stdlib?
+
+	a) MySQL 
+	b) sqlite3 
+	c) MSSQL 
+	d) Oracle 
+	
+Какой модуль из stdlib используется для работы с датой и временем?
+
+	a) alldata 
+	b) date 
+	c) datetime 
+	d) timedelta 
+	
+Какой модуль из stdlib появился в Python 3 и отсутствует в этом виде в Python 2?
+
+	a) urllib
+	b) urllib2 
+	c) httplib 
+	d) urllib.request 
+	
+Какой модуль из stdlib используется для работы с регулярными выражениями?
+
+	a) regexp 
+	b) re 
+	c) random
+	d) math 
+	
+Какой тип данных (объект) не находится во встроенных функциях __builtins__ и его необходимо импортировать перед использованием?
+
+	a) set 
+	b) array 
+	c) tuple 
+	d) unicode 
+	
+В каких директориях происходит поиск модулей для импорта?
+	
+	a) в директориях, которые содержатся в списке os.path модуля os 
+	b) в директории, откуда был запущен интерпретатор python (т.е. в текущей директории) 
+	c) в директориях, которые содержатся в списке sys.path модуля sys 
+	d) во всех директориях файловой системы
+	
+Какая из перечисленных сторонних библиотек не является фреймвоком для web-разработки?
+
+	a) flask
+	b) django 
+	c) tornado 
+	d) pillow 
+	
+При помощи какого атрибута можно узнать физическое местонахождение модуля?
+	
+	a) __file__ 
+	b) __doc__ 
+	c) __name__
+	d) __dict__ 
+	e) __path__ 
+	
+Что делает следующий код: sys.path.append('/root/modules')?
+
+	a) изменяет текущую рабочую директорию 
+	b) добавляет директорию для поиска импортируемых модулей 
+	c) перемещает директорию modules 
+	d) создает новую директорию. 
+ 
+Задание 17
+----------
+
+Как называется каталог питоновских пакетов?
+	
+	a) pip
+	b) pypi
+	c) pipi
+	d) pypug
+	
+Какой файл внутри питоновского пакета используется для инсталляции пакета в систему?
+
+	a) setup.py 
+	b) install.py 
+	c) pip
+	d) pypy 
+	
+Откуда можно скачать питоновкий пакет?
+
+	a) только из каталога пакетов https://pypi.python.org/pypi 
+	b) только из каталога пакетов https://pypi.python.org/pypi и http://github.com
+	c) только из каталога пакетов https://pypi.python.org/pypi, http://github.com и официального сайта python https://www.python.org/ 
+	d) из любого локального и глобального источника: кто угодно может создать python пакет и выложить на любом сайте 
+	
+Что считается питоновским пакетом?
+
+	a) Любая директория с файлами с расширением *.py 
+	b) Любой питоновский модуль, который содержит файл __init__.py 
+	c) Любая директория с файлом setup.py 
+	d) Любая директория с файлом install.py 
+	e) Только директории, которые созданы согласно документации Python Packaging User Guide (PyPUG): https://packaging.python.org/en/latest/ 
+	
+Что можно сделать при помощи пакетного менеджера PIP?
+	
+	a) Скачать и установить пакет 
+	b) Удалить пакет 
+	c) Установить пакет определенной версии 
+	d) Все вышеперечисленное 
+	
+Что есть правильным указанием версии пакета, для PIP (несколько вариантов ответа)
+
+	a) django=1.7.5 
+	b) django>1.7 
+	c) django 1.7.5 
+	d) django==1.7.5 
+	e) django version 1.7.5 
+	
+Для чего используются виртуальные окружения?
+
+	a) Для изоляции устанавливаемых версий пакетов согласно зависимостей конкретного проекта.
+	b) Для запуска Linux 
+	c) Для подключения модулей не входящих в stdlibs 
+	d) Для запуска питона в безопасном режиме 
+	
+Что необходимо учитывать при установке зависимостей согласно файлу регистрации зависимостей requirements.txt? 
+Выберите наиболее полный правильный ответ из представленных.
+ 
+	a) файл должен содержать перечень модулей обязательно с указанием их версий 
+	b) файл должен содержать перечень модулей, желательно с указанием версий 
+	c) файл должен содержать перечень модулей, желательно с указанием версий, директория файла должна быть текущей директорией 
+	d) файл должен содержать перечень модулей, желательно с указанием версий, команда установки должна учитывать путь к файлу
+
+Что нужно сделать, чтобы работала следующая строка кода: foo.bar.foobar() (при условии, что необходимый импорт осуществлен)? 
+Выберите наиболее полный правильный ответ.
+
+	a) создать файлы __init__.py и bar.py в директории foo, объявить функцию foobar() в bar.py 
+	b) создать файлы __init__.py и и foo.py в директории bar, объявить функцию foobar() в foo.py 
+	c) создать файл bar.py в директории foo, объявить в нем функцию foobar() 
+	d) создать пакет bar в директории foo 
+	
+
+ 
