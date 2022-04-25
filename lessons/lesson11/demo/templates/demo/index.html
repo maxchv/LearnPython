@@ -1,0 +1,26 @@
+{% extends 'demo/main.html' %}
+{% load thumbnail %}
+{% block content %}
+    <table>
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Avatar</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for student in students %}
+        <tr>
+        <td>{{ student.pk }}</td>
+        <td>{{ student.first_name }}</td>
+        <td>{{ student.first_name }}</td>
+        <td>{{ student.email }}</td>
+        <td><img src="{{ student.avatar|thumbnail_url:'avatar' }}" alt="{{ student.avatar.name }}" class="avatar"></td>
+        </tr>
+    {% endfor %}
+    </tbody>
+    </table>
+{% endblock %}

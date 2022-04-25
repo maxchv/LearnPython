@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Students</title>
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+    <style>
+        table {
+            display: table;
+        }
+    </style>
+</head>
+<body>
+<form action="" method="post">
+    {% csrf_token %}
+    <table>
+        {{ form }}
+    </table>
+    <input type="submit">
+</form>
+</body>
+</html>

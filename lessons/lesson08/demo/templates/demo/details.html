@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+<div>
+    <a href="{% url 'demo:index' %}">Home page</a>
+</div>
+
+<div>
+    <h2>Student details</h2>
+    <div>Id: {{ student.pk }}</div>
+    <div>First Name: {{ student.first_name }}</div>
+    <div>Last Name: {{ student.last_name }}</div>
+    <div>Birth Date: {{ student.birth_of_date }}</div>
+    <div>Created: {{ student.created }}</div>
+    <div>Updated: {{ student.updated }}</div>
+    <div>
+        <h3>Courses</h3>
+        <ul>
+            {% for course in student.courses.all %}
+                <li>{{ course.name }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

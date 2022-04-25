@@ -1,0 +1,10 @@
+{% extends 'demo/main.html' %}
+{% block content %}
+    <form action="" method="post" enctype="multipart/form-data">
+    <table>
+        {% csrf_token %}
+        {{ form }}
+    </table>
+        <input type="submit"/>
+    </form>
+{% endblock %}

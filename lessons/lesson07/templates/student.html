@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block main %}
+    <h1>Create student</h1>
+    <form method="post">
+        <table>
+            {{ form }}
+            {% csrf_token %}
+        </table>
+        <input type="submit"/>
+    </form>
+
+
+    <table>
+    <caption>All students</caption>
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Details</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for student in students %}
+            <tr>
+                <td>{{ student.pk }}</td>
+                <td>{{ student.first_name }}</td>
+                <td>{{ student.last_name }}</td>
+                <td><a href="{% url 'details' student.pk %}">Details</a></td>
+            </tr>
+        {% endfor %}
+
+        </tbody>
+    </table>
+
+{% endblock %}

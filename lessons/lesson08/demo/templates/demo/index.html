@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+<div>
+    <a href="{% url 'demo:create' %}">Create</a>
+</div>
+
+<table>
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for student in students %}
+        <tr>
+            <td>{{ student.id }}</td>
+            <td>{{ student.first_name }}</td>
+            <td>{{ student.last_name }}</td>
+            <td>
+                <a href="{% url 'demo:details' student.id %}">Details</a>
+                | <a href="{% url 'demo:edit' student.id %}">Edit</a>
+                | <a href="{% url 'demo:delete' student.id %}">Delete</a>
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+</body>
+</html>

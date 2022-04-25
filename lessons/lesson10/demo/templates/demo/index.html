@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Students</title>
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+    <style>
+        table {
+            display: table;
+        }
+
+        .center {
+            margin: 10px auto;
+        }
+
+        .pagination {
+            width: 160px;
+        }
+
+        .pagination div {
+            display: inline-block;
+        }
+
+        div.current {
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+<body>
+<div>
+<div><a href="{% url 'demo:create' %}">Create</a></div>
+    <table class="center">
+        <caption>Students</caption>
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Gender</th>
+            <th>Birth Date</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for student in students %}
+            <tr>
+                <td>{{ student.pk }}</td>
+                <td>{{ student.first_name }}</td>
+                <td>{{ student.last_name }}</td>
+                <td>{{ student.gender }}</td>
+                <td>{{ student.birth_date|date:'d/m/Y' }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <div class="center pagination">
+        {% if page_obj.has_previous %}
+            <div>
+                <a href="?page={{ page_obj.previous_page_number }}">
+                    &lt;&lt;
+                </a>
+            </div>
+        {% endif %}
+        {#        <div>Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}</div>#}
+        {% for i in page_range %}
+            {% if page_obj.number == i %}
+                <div class="current"><a href="?page={{ i }}">{{ i }}</a></div>
+            {% else %}
+                <div><a href="?page={{ i }}">{{ i }}</a></div>
+            {% endif %}
+        {% endfor %}
+        {% if page_obj.has_next %}
+            <div>
+                <a href="?page={{ page_obj.next_page_number }}">&gt;&gt;</a>
+            </div>
+        {% endif %}
+    </div>
+</div>
+
+<div>
+    &lt;p> - это тег, который используется для обознаяения параграфа
+</div>
+</body>
+</html>
