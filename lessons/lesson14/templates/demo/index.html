@@ -1,0 +1,14 @@
+{% extends 'demo/base.html' %}
+{% block content %}
+    {% for post in posts %}
+        <article>
+            <header>
+                <h3>{{ post.title }}</h3>
+                <div>Author: <a href="{% url 'demo:personal_blog' post.blog.slug %}">{{ post.blog.author }}</a></div>
+            </header>
+            <div>
+                {{ post.text|truncatechars:50 }}
+            </div>
+        </article>
+    {% endfor %}
+{% endblock %}

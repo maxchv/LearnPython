@@ -2,24 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{{ title|default:'Home page' }}</title>
+    <title>Simple blog</title>
     <link rel="stylesheet" href="https://unpkg.com/mvp.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <header>
+    <h1>Simple blog</h1>
     <nav>
         <ul>
-            <li><a href="{% url 'demo:index' %}">Home page</a></li>
+            <li><a href="{% url 'demo:index' %}">Main page</a></li>
             {% if request.user.is_authenticated %}
-                <li>Welcome {{ request.user.username }} <a href="{% url 'demo:logout' %}">Logout</a></li>
-                <li><a href="{% url 'demo:create_post' %}">Add post</a></li>
+                <li><a href="{% url 'demo:create_post' user.author.blog.slug %}">Create post</a></li>
+                <li><a href="{% url 'demo:logout' %}">Logout</a></li>
             {% else %}
                 <li><a href="{% url 'demo:login' %}">Login</a></li>
             {% endif %}
         </ul>
     </nav>
-    <h1>{{ title|default:'Home page' }}</h1>
 </header>
 <main>
     {% block content %}

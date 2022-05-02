@@ -1,0 +1,11 @@
+{% extends 'demo/base.html' %}
+{% block content %}
+    <h2>Add new post</h2>
+    <form action="post">
+        <table>
+            {{ form }}
+        </table>
+        {% csrf_token %}
+        <input type="submit">
+    </form>
+{% endblock %}

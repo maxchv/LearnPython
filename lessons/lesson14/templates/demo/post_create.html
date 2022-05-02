@@ -1,0 +1,10 @@
+{% extends 'demo/base.html' %}
+{% block content %}
+    <form action="{% url 'demo:create_post' user.author.blog.slug %}" method="post">
+        <table>
+            {{ form }}
+        </table>
+        {% csrf_token %}
+        <input type="submit"/>
+    </form>
+{% endblock %}
