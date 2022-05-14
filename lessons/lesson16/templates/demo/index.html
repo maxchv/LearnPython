@@ -1,0 +1,28 @@
+{% extends "demo/base.html" %}
+{% block content %}
+    <article>
+        <header>
+            <h2>Simple ToDoList</h2>
+            <form action="{% url 'demo:index' %}" method="post">
+                <table>
+                    {{ form }}
+                    {% csrf_token %}
+                </table>
+                <input type="submit"/>
+            </form>
+        </header>
+        {% if tasks %}
+            <div class="tasks">
+                {% for task in tasks %}
+                    <div class="task">
+{#                        <p>{{ task.pk }}</p>#}
+                        <p>{{ task.description }}</p>
+                        <p><a href="{% url 'demo:delete' task.pk %}">Delete</a></p>
+                    </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p>Empty task lists</p>
+        {% endif %}
+    </article>
+{% endblock %}
