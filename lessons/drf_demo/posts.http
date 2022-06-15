@@ -1,0 +1,36 @@
+GET {{base-url}}/posts
+Accept: application/json
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost:8000/api/posts/
+Content-Type: application/json
+
+{
+  "title": "Test post"
+}
+
+###
+GET http://localhost:8000/api/comments
+Accept: application/json
+
+###
+POST http://localhost:8000/api/comments/
+Content-Type: application/json
+
+{
+  "text": "Another comment for first post",
+  "post": 2
+}
+
+###
+
+POST http://localhost:8000/api/v1/token/
+Content-Type: application/json
+
+{
+  "username": "max",
+  "password": "max"
+}
+
+###

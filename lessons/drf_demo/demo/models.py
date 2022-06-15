@@ -4,13 +4,12 @@ from django.db.models import Model, CASCADE, CharField, TextField, DateTimeField
 
 class Post(Model):
     title = CharField(max_length=100, blank=False, null=False)
-    text = TextField()
+    text = TextField(null=True, blank=True)
     created = DateTimeField(auto_now_add=True)
     modified = DateTimeField(auto_now=True)
 
 
 class Comment(Model):
     post = ForeignKey(Post, related_name='comments', on_delete=CASCADE)
-    user = ForeignKey(User, on_delete=CASCADE)
     text = TextField()
     created = DateTimeField(auto_now_add=True)

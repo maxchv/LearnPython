@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table, td, th {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <button id="btnLoad">Refresh posts</button>
+    <table>
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Text</th>
+            <th>Comments</th>
+        </tr>
+        </thead>
+        <tbody id="posts"></tbody>
+    </table>
+</main>
+<script>
+    const baseUrl = 'http://localhost:8000/api/v1';
+    const buttonLoad = document.getElementById('btnLoad');
+    const postsTable = document.getElementById('posts');
+
+    function loadPosts(callback) {
+        fetch(`${baseUrl}/posts`)
+            .then(response => response.json())
+            .then(json => callback(json));
+    }
+
+    function showPosts(posts) {
+        console.log(posts);
+        postsTable.innerHTML = '';
+        posts.forEach(post => {
+            const row = document.createElement('tr');
+            const td1 = document.createElement('td');
+            td1.append(post.id);
+            const td2 = document.createElement('td');
+            td2.append(post.title);
+            const td3 = document.createElement('td');
+            td3.append(post.text);
+            const td4 = document.createElement('td');
+            td4.append(post.comments.length);
+            row.append(td1, td2, td3, td4);
+            postsTable.append(row);
+        });
+    }
+
+    buttonLoad.addEventListener('click', () => {
+        loadPosts(showPosts);
+    });
+
+    window.addEventListener('load', () => {
+        loadPosts(showPosts);
+    })
+</script>
+</body>
+</html>

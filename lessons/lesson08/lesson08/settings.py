@@ -22,12 +22,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-(m+x#-e3ucd=jbz4us-9o((v7k$)a#&f_7uz03pou=&yid9mp*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = [
-    '127.0.0.1',
-    'localhost'
-]
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -79,8 +76,12 @@ WSGI_APPLICATION = 'lesson08.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'djangodb',
+        'USER': 'dbadmin',
+        'PASSWORD': 'django',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
@@ -126,5 +127,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
 ]
+STATIC_ROOT = '/var/www/html' + STATIC_URL
 
 CRISPY_TEMPLATE_PACK = 'bootstrap3'

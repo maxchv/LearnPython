@@ -1,3 +1,4 @@
+from django.http import HttpResponse, JsonResponse
 from django.shortcuts import redirect
 from django.urls import reverse_lazy
 from django.views.generic import ListView, DeleteView, CreateView
@@ -23,3 +24,14 @@ class TasksListView(ListView):
 class TasksDeleteView(DeleteView):
     model = Task
     success_url = reverse_lazy('demo:index')
+
+#
+# def task_list(request):
+#     tasks = Task.objects.all()
+#     data = []
+#     for task in tasks:
+#         data.append({
+#             "description": task.description,
+#             "created": str(task.created)
+#         })
+#     return JsonResponse(data, safe=False)
